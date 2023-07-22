@@ -248,7 +248,7 @@ main {
     height: 3rem;
   }
 /* mobile adjustments begin here: */
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 600px) {
 
     main {
       padding:1.5rem;
