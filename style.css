@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code starts here!!! */
+
+a:link {
+    color: #B3B3B3;
+    text-decoration: none;
+
+  }
+
+  a:visited {
+    color: #B3B3B3;
+  }
+
+  a:hover {
+    color: #595959;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #595959;
+  }
+
+h1 {
+    font-family: "Press Start 2p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #595959;
+    line-height: 120%;
+  }
+
+h2 {
+    font-family: "Press Start 2p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #595959;
+    line-height: 120%;
+  }
+
+h3 {
+    font-family: "Press Start 2p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #B3B3B3;
+    display: inline;
+  }
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #595959;
+    line-height: 125%;
+    display: inline;
+  }
+
+
+main {
+    /* background: #feb200; */
+    /* margin is outside element */
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+    /* padding is inside element */
+  }
+
+  nav {
+    /* background: #87ceeb; */
+    position: fixed;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav a {
+    padding-right: 5rem;
+  }
+
+  div.fixbr {
+    height: 25vh;
+  }
+
+  div.hugebr {
+    height: 25vh;
+  }
+  div.intro {
+  
+  }
+
+  div.bigbr {
+    height: 2rem;
+  }
+
+  div.smallbr {
+    height: 1rem;
+  }
+
+  div.thumbnail-br {
+    height: 5rem;
+  }
+  img.arrow {
+    max-width: 3rem;
+    position: absolute;
+    left: 47%;
+  }
+
+  div.arrow {
+    position: relative;
+  }
+
+  div.gallery {
+    display: flex;
+    align-items: left;
+  }
+
+    img.thumbnail {
+    max-width: 75%;
+    height: auto;
+    margin-right: 1rem;
+
+    }
+
+    img.welcome {
+      left: 50%;
+	    margin-left: -50vw;
+	    margin-right: -50vw;
+	    max-width: 99.56vw;
+	    position: relative;
+	    right: 50%;
+      
+    }
+
+    img.meat {
+      max-width: 100%;
+    }
+
+    div.welcome-description {
+      max-width: 30rem;
+      display: inline-block;
+      margin-right: 12rem;
+    }
+
+    div.meat {
+      max-width: 41rem;
+    }
+
+
+   
+    div.thumbnail-description {
+    max-width: 40vh;
+    }
+
+    /* a.miyamoto-anchor :hover {
+        color: red;
+        text-decoration: underline;
+      }
+      a.spoken-anchor :hover {
+        color: #D5A52E;
+        text-decoration: underline;
+      }
+     */
+
+    div.welcome-container {
+      display: inline-block;
+
+    }
+
+    div.welcome-fact {
+    display: inline-block;
+    }
+
+     div.about {
+      max-width: 70vh;
+
+     }
+
+     b.italic {
+      font-style: italic;
+     }
+  
+  .widget ul li {
+    display: inline-block
+  }
+
+  .widget a {
+    padding-right: 2rem;
+  }
+
+  footer {
+    left: 6rem;
+    position: relative;
+    bottom: 2rem;
+    width: 100vh;
+    height: 3rem;
+  }
+/* mobile adjustments begin here: */
+  @media screen and (max-width: 360px) {
+
+    main {
+      padding:1.5rem;
+    }
+
+    div.about {
+    }
+
+    nav ul li {
+      display: inline-block;
+      justify-content: space-between;
+      
+    }
+
+    h1 {
+      font-size: 12pt;
+    }
+
+    h2 {
+      font-size: 25pt;
+    }
+
+    h3 {
+      font-size: 8pt;
+    }
+    
+    body {
+      font-size: 10pt;
+    }
+    div.stuff {
+      padding-bottom: 1rem;
+    }
+
+    div.about {
+      right: 0;
+    }
+
+    div.fixbr {
+      height: 17vh;
+    }
+    div.hugebr {
+      height: 18vh;
+    }
+
+    div.smallbr {
+      height: .5rem;
+    }
+    
+    div.bigbr {
+      height: 1rem;
+    }
+
+    div.thumbnail-br {
+      height: 3rem;
+    }
+    
+    img.arrow {
+      max-width: 1rem;
+    }
+
+    
+    img.thumbnail {
+      max-width: 100%;
+      margin-bottom: .5rem;
+    }
+
+    div.gallery {
+      display: block;
+    }
+
+    div.thumbnail-description {
+      max-width: 100%;
+    }
+  
+    .br {
+      display: none;
+    }
+    footer {
+      left: 1.5rem;
+      position: relative;
+      bottom: 2rem;
+      width: 100vh;
+    }
+  }
