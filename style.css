@@ -158,9 +158,6 @@ main {
     left: 47%;
   }
 
-  div.arrow {
-    position: relative;
-  }
 
   div.gallery {
     display: flex;
@@ -246,6 +243,30 @@ main {
     bottom: 2rem;
     height: 3rem;
   }
+
+  .youtube-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+
+  .stuffs {
+    position: absolute;
+    left: 46.5%;
+  }
+
+  img.more {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  div.more {
+    column-count: 3;
+    column-gap: none;
+    margin: 0;
+    max-width: 100%;
+  }
 /* mobile adjustments begin here: */
   @media screen and (max-width: 600px) {
 
@@ -330,4 +351,33 @@ main {
       position: relative;
       bottom: 2rem;
     }
+    
+    div.welcome-description: {
+      margin-right: none;
+    }
+
+    
+    div.welcome-container {
+      max-width: 100%;
+    }
+
+    img.welcome {
+      max-width: 100%;
+      margin-bottom: .5rem;
+    }
+
+    img.more {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    div.more {
+      column-count: 2;
+      column-gap: none;
+      margin: 0;
+      max-width: 100%;
+    }
+  
   }
