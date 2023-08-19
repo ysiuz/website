@@ -137,9 +137,7 @@ main {
   div.hugebr {
     height: 25vh;
   }
-  div.intro {
   
-  }
 
   div.bigbr {
     height: 2rem;
@@ -354,7 +352,7 @@ main {
     
     div.welcome-description: {
       margin-right: none;
-    }
+    }1
 
     
     div.welcome-container {
