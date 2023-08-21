@@ -342,6 +342,11 @@ main {
       margin-bottom: .5rem;
     }
 
+    img.welcome {
+      display: block;
+      max-width: 100%;    
+    }
+
     div.gallery {
       display: block;
     }
