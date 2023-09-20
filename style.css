@@ -199,6 +199,11 @@ main {
       max-width: 100%;
     }
 
+    img.profile {
+      max-width: 35vh;
+      display: inline-block;
+    }
+
     div.welcome-description {
       max-width: 30rem;
       display: inline-block;
@@ -310,6 +315,7 @@ main {
     }
 
     div.about {
+      max-width: 45vh;
       right: 0;
     }
 
@@ -345,6 +351,10 @@ main {
     img.welcome {
       display: block;
       max-width: 100%;    
+    }
+
+    img.profile {
+      max-width: 45vh;
     }
 
     div.gallery {
@@ -398,8 +408,6 @@ main {
     }
   
     div.afooter1 {
-      display: inline-block;
-      position: fixed;
       bottom: 1rem;
     }
   
