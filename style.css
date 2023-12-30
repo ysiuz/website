@@ -316,7 +316,7 @@ main {
     margin: 0;
     max-width: 100%;
   }
-  
+
   div.smallmore {
     column-count: 2;
     column-gap: none;
@@ -334,6 +334,7 @@ main {
     nav ul li {
       display: inline-block;
       justify-content: space-between;
+      padding-right: 2.5rem;
       
     }
 
