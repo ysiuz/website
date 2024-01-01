@@ -121,7 +121,6 @@ body {
 main {
     /* background: #feb200; */
     /* margin is outside element */
-    padding-top: 3rem;
     padding-left: 6rem;
     padding-right: 6rem;
     padding-bottom: 3rem;
@@ -145,12 +144,18 @@ main {
   nav {
     /* background: #87ceeb; */
     position: fixed;
-    width: 100%;
+    width: 89.9%;
+    height: 5rem;
+    background: white;
+    border-bottom: 2px solid #595959;
+
   }
 
   nav ul li {
     display: inline-block;
-    padding-right: 5rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    background-color: white;
 
   }
 
