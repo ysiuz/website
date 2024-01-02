@@ -143,11 +143,16 @@ main {
   }
   nav {
     /* background: #87ceeb; */
+    width: 90%;
     position: fixed;
-    width: 89.9%;
     height: 5rem;
     background: white;
     border-bottom: 2px solid #595959;
+    margin-right: 6rem;
+
+
+    /* filter: drop-shadow( 0 .2rem 1rem #595959); */
+
 
   }
 
@@ -338,7 +343,6 @@ main {
 
     nav ul li {
       display: inline-block;
-      justify-content: space-between;
       padding-right: 2.5rem;
       
     }
