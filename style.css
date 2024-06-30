@@ -49,84 +49,158 @@ table {
 
 /* My code starts here!!! */
 
+
+
+/* Start of type-specific styles */
+
 a:link {
-    color: #B3B3B3;
+    color: #B9E2FF;
     text-decoration: none;
+    text-decoration: ;
 
   }
 
   a:visited {
-    color: #B3B3B3;
+    color: #B9E2FF;
   }
 
   a:hover {
-    color: #595959;
-    text-decoration: underline;
+    color: #FF51CC;
+    text-decoration: ;
   }
 
   a:active {
-    color: #595959;
+    color: #B9E2FF;
   }
 
+  a.message:link {
+    color: #B9E2FF;
+  }
 
+  @font-face {
+    font-family: "offbit";
+    src: url("fonts/OffBit-101Bold.woff2") format('woff2');
+    font-weight: bold;
+  }
 
-
-
-  @font-face{
-    font-family: 'NeueBit';
-    src: url('PPNeueBit-Bold.otf') format('truetype');
-    font-weight: 700;
- }
+  @font-face {
+    font-family: "offdot";
+    src: url("fonts/OffBit-DotBold.woff2") format('woff2');
+    font-weight: bold;
+  }
+  
 
  h1 {
-  font-family: "Press Start 2p", sans-serif;
+  font-family: "offbit", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
-  color: #595959;
-  line-height: 120%;
+  font-size: 50px;
+  color: #5CBBFF;
+  line-height: 110%;
 }
 
 h2 {
-    font-family: "Press Start 2p", sans-serif;
+    font-family: "offdot", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
-    color: #595959;
+    font-size: 40px;
+    color: black;
     line-height: 120%;
   }
 
 h3 {
-    font-family: "Press Start 2p", sans-serif;
+    font-family: "arial", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
-    color: #595959;
+    font-size: 25px;
+    color: #FF51CC;
     display: inline;
-  }
+    line-height: 150%;
+}
+
+h4 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 20px;
+  color: #FF51CC;
+  display: inline;
+  line-height: 150%;
+}
+
 
 body {
-    font-family: "Epilogue", sans-serif;
+    font-family: "arial", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
-    color: #595959;
+    color: black;
     line-height: 125%;
     display: inline;
     min-height: 100vh;
 
   }
+/* end of type-specific styles. */
 
 
 main {
     /* background: #feb200; */
     /* margin is outside element */
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 3rem;
+    margin-top: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 9999;
+    background-color: ;
+
+    /* pointer-events: none; */
     
     /* padding is inside element */
   }
+
+  header {
+    
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+   
+  }
+
+  nav {
+    margin-right: 20rem;
+    position: fixed;
+
+  }
+
+  div.index-gallery {
+    max-width: auto;
+    
+   max-height: 40vw;
+    text-align: center;
+    
+  }
+
+  img.project {
+    max-height: 40vw;
+    max-width: 60vw;
+    display: block;
+    margin: auto;
+
+  }
+
+    div.project-descriptions {
+    text-align: center;
+    text-justify: inter-word;
+    display: block;
+    margin: auto;
+    }
+
+  
+  
+/////
+
   div.afooter1 {
     display: inline-block;
     position: fixed;
@@ -141,29 +215,7 @@ main {
   div.footer2 {
     display: inline-block;
   }
-  nav {
-    /* background: #87ceeb; */
-    width: 90%;
-    position: fixed;
-    height: 5rem;
-    background: white;
-    border-bottom: 2px solid #595959;
-    margin-right: 6rem;
-
-
-    /* filter: drop-shadow( 0 .2rem 1rem #595959); */
-
-
-  }
-
-  nav ul li {
-    display: inline-block;
-    margin-top: 2rem;
-    margin-right: 5rem;
-    background-color: white;
-
-  }
-
+  
   /* nav a {
     padding-right: 5rem;
   } */
@@ -174,11 +226,14 @@ main {
 
   div.hugebr {
     height: 25vh;
+    pointer-events: none;
+
   }
   
 
   div.bigbr {
-    height: 2rem;
+    height: 5rem;
+    pointer-events: none;
   }
 
   div.smallbr {
@@ -462,5 +517,13 @@ main {
     div.afooter1 {
       bottom: 1rem;
     }
+
+    div.smallmore {
+      column-count: 1;
+      column-gap: none;
+      margin: 0;
+      max-width: 100%;
+    }
+  
   
   }
