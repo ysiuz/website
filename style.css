@@ -169,7 +169,7 @@ main {
   }
 
   nav {
-    margin-right: 20rem;
+    max-width: 80%;
     position: fixed;
 
   }
@@ -391,19 +391,19 @@ main {
 
   /* laptop adjustments */
 
-  @media screen and (max-width:1500px) {
+  @media screen and (max-width:1700px) {
   
     h1 {
       font-family: "offbit", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 35px;
+      font-size: 40px;
       color: #5CBBFF;
       line-height: 110%;
     }
 
     nav {
-      margin-right: 10rem;
+      max-width: 80%;
       position: fixed;
   
     }
@@ -421,6 +421,44 @@ main {
   
   }
 
+  @media screen and (max-width:1400px) {
+  
+    h1 {
+      font-family: "offbit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 35px;
+      color: #5CBBFF;
+      line-height: 110%;
+    }
+
+    nav {
+      position: fixed;
+  
+    }
+
+  
+  }
+
+  @media screen and (max-width:1300px) {
+  
+    h1 {
+      font-family: "offbit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      color: #5CBBFF;
+      line-height: 110%;
+    }
+
+    nav {
+      position: fixed;
+  
+    }
+
+  
+  }
+
 /* mobile adjustments begin here: */
   @media screen and (max-width: 600px) {
 
@@ -428,14 +466,12 @@ main {
       padding:1.5rem;
     }
 
-    nav ul li {
-      display: inline-block;
-      padding-right: 2.5rem;
-      
+    nav {
+     max-width: 1-00%
     }
 
     h1 {
-      font-size: 12pt;
+      font-size: 25pt;
     }
 
     h2 {
