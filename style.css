@@ -182,9 +182,25 @@ main {
     
   }
 
+  div.dion-walking {
+    max-width: auto;
+    bottom: 0;
+   max-height: 40vw;
+    text-align: center;
+    
+  }
+
   img.project {
     max-height: 40vw;
     max-width: 60vw;
+    display: block;
+    margin: auto;
+
+  }
+
+  img.smol {
+    max-width: 100px;
+    height: auto;
     display: block;
     margin: auto;
 
