@@ -89,6 +89,23 @@ a:link {
     font-weight: bold;
   }
   
+  @font-face {
+    font-family: "offdot";
+    src: url("fonts/OffBit-DotBold.woff2") format('woff2');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: 'ppmori-regular';
+    src: url('fonts/PPMori-Regular.woff2') format('woff2');
+    font-weight: 100;
+ }
+
+ @font-face {
+  font-family: 'ppmori-regular-italic';
+  src: url('fonts/PPMori-RegularItalic.woff2') format('woff2');
+  font-weight: 100;
+}
 
  h1 {
   font-family: "offbit", sans-serif;
@@ -100,7 +117,7 @@ a:link {
 }
 
 h2 {
-    font-family: "offdot", sans-serif;
+    font-family: "offbit", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
@@ -109,8 +126,8 @@ h2 {
   }
 
 h3 {
-    font-family: "arial", sans-serif;
-    font-weight: 400;
+    font-family: "ppmori-regular", sans-serif;
+    font-weight: 100;
     font-style: normal;
     font-size: 25px;
     color: #FF51CC;
@@ -119,7 +136,7 @@ h3 {
 }
 
 h4 {
-  font-family: sans-serif;
+  font-family: "ppmori-regular-italic", sans-serif;
   font-weight: 100;
   font-style: italic;
   font-size: 20px;
@@ -130,7 +147,7 @@ h4 {
 
 
 body {
-    font-family: "arial", sans-serif;
+    font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
