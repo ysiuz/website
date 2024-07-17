@@ -161,7 +161,7 @@ body {
 
 
 main {
-    /* background: #feb200; */
+    backdrop-filter: blur(2.5px);
     /* margin is outside element */
     margin-top: 0rem;
     margin-left: 2rem;
@@ -179,7 +179,7 @@ main {
   header {
     
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
    
