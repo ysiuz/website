@@ -57,6 +57,12 @@ a:link {
     color: #B9E2FF;
     text-decoration: none;
     text-decoration: ;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; 
+    letter-spacing:   -2px;
+
 
   }
 
@@ -66,7 +72,9 @@ a:link {
 
   a:hover {
     color: #FF51CC;
-    text-decoration: ;
+    /* text-decoration: underline; */
+    text-decoration-color: #FF51CC;
+    letter-spacing:  normal;
   }
 
   a:active {
@@ -76,6 +84,7 @@ a:link {
   a.message:link {
     color: #B9E2FF;
   }
+
 
   @font-face {
     font-family: "offbit";
@@ -107,6 +116,13 @@ a:link {
   font-weight: 100;
 }
 
+@font-face {
+  font-family: 'ppmori-bold';
+  src: url('fonts/PPMori-Bold.woff2') format('woff2');
+  font-weight: 100;
+}
+
+
  h1 {
   font-family: "offbit", sans-serif;
   font-weight: 400;
@@ -126,8 +142,8 @@ h2 {
   }
 
 h3 {
-    font-family: "ppmori-regular", sans-serif;
-    font-weight: 100;
+    font-family: "ppmori-bold", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 25px;
     color: #FF51CC;
@@ -137,7 +153,7 @@ h3 {
 
 h4 {
   font-family: "ppmori-regular-italic", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: italic;
   font-size: 20px;
   color: #FF51CC;
