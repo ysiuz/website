@@ -186,7 +186,6 @@ main {
     position: relative;
     z-index: 9999;
     background-color: ;
-
     /* pointer-events: none; */
     
     /* padding is inside element */
@@ -250,21 +249,11 @@ main {
   
 /////
 
-  div.afooter1 {
-    display: inline-block;
-    position: fixed;
-    bottom: 2rem;
-  }
-
   div.footer1 {
-    display: inline-block;
-    padding-left: 6rem;
-    width: 72.5%;
+    max-width: auto;
+    text-align: center;
+    
   }
-  div.footer2 {
-    display: inline-block;
-  }
-  
   /* nav a {
     padding-right: 5rem;
   } */
