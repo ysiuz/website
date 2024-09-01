@@ -61,7 +61,7 @@ a:link {
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease; 
-    letter-spacing:   -2px;
+    letter-spacing:   -1px;
 
 
   }
@@ -136,9 +136,9 @@ h2 {
     font-family: "offbit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 100px;
     color: black;
-    line-height: 120%;
+    line-height: 100%;
   }
 
 h3 {
@@ -146,7 +146,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    color: #FF51CC;
+    color: ;
     display: inline;
     line-height: 150%;
 }
@@ -156,9 +156,37 @@ h4 {
   font-weight: 400;
   font-style: italic;
   font-size: 20px;
-  color: #FF51CC;
+  color:;
   display: inline;
   line-height: 150%;
+}
+
+h5 {
+  font-family: "ppmori-bold", sans-serif;
+  font-weight: 400;
+  font-style: ;
+  font-size: 20px;
+  color:grey;
+  display: inline;
+  line-height: 150%;
+}
+
+h6 {
+  font-family: "offbit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: lightgrey;
+  line-height: 110%;
+}
+
+h7 {
+  font-family: "offbit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: lightgrey;
+  line-height: 110%;
 }
 
 
@@ -180,11 +208,11 @@ main {
     backdrop-filter: blur(2.5px);
     /* margin is outside element */
     margin-top: 0rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     margin-bottom: 3rem;
     position: relative;
-    z-index: 9999;
+    z-index: 2;
     background-color: ;
     /* pointer-events: none; */
     
@@ -193,7 +221,6 @@ main {
 
   header {
     
-    padding-top: 2rem;
     padding-left: 2.5rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
@@ -201,8 +228,21 @@ main {
   }
 
   nav {
+    padding-left: 12rem;
+    padding-top: 2rem;
+
     max-width: 80%;
     position: fixed;
+    z-index: ;
+
+
+  }
+
+  nav_project {
+    padding-top: 2rem;
+    max-width: 80%;
+    position: fixed;
+    z-index: 3;
 
   }
 
@@ -281,12 +321,7 @@ main {
   div.thumbnail-br {
     height: 5rem;
   }
-  img.arrow {
-    max-width: 3rem;
-    position: absolute;
-    left: 47%;
-  }
-
+  
 
   div.gallery {
     display: flex;
@@ -330,11 +365,27 @@ main {
       display: inline-block;
     }
 
-    div.welcome-description {
-      max-width: 30rem;
-      display: inline-block;
-      margin-right: 12rem;
+    div.welcome-box1 {
+      flex: 6; /* Each box will grow equally to fill available space */
+      margin: 0 10px; /* Space between boxes */
+      max-width: 70%;
     }
+    div.welcome-box2 {
+      flex: 4; /* Each box will grow equally to fill available space */
+      margin: 0 10px; /* Space between boxes */
+      max-width: 30;
+    }
+    div.welcome-box3 {
+      flex: 3; /* Each box will grow equally to fill available space */
+      margin: 0 10px; /* Space between boxes */
+      max-width: 30;
+    }
+
+    div.welcome-box4{
+      flex: .5; /* Each box will grow equally to fill available space */
+    }
+
+
 
     div.meat {
       max-width: 41rem;
@@ -363,13 +414,15 @@ main {
      */
 
     div.welcome-container {
-      display: inline-block;
-
+      display: flex;
+      justify-content: space-between; /* Distributes space between flex items */
+      padding: 10px;
+      box-sizing: border-box;
     }
 
-    div.welcome-fact {
+    /* div.welcome-fact {
     display: inline-block;
-    }
+    } */
 
      div.about {
       max-width: 70vh;
