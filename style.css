@@ -155,46 +155,37 @@ h4 {
   font-family: "ppmori-regular-italic", sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
   color:;
   display: inline;
-  line-height: 150%;
-}
-
-h5 {
-  font-family: "ppmori-bold", sans-serif;
-  font-weight: 400;
-  font-style: ;
-  font-size: 20px;
-  color:grey;
-  display: inline;
-  line-height: 150%;
-}
-
-h6 {
-  font-family: "offbit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  color: lightgrey;
-  line-height: 110%;
+  line-height: 100%;
 }
 
 h7 {
   font-family: "offbit", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  color: lightgrey;
+  font-style: bold;
+  font-size: 75px;
+  color: black;
   line-height: 110%;
 }
 
+h8 {
+  font-family: "ppmori-regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: black;
+  line-height: 125%;
+  display: inline;
+  min-height: 100vh;
 
+}
 body {
     font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 17px;
+    font-size: 18px;
     color: black;
     line-height: 125%;
     display: inline;
@@ -366,24 +357,23 @@ main {
     }
 
     div.welcome-box1 {
-      flex: 6; /* Each box will grow equally to fill available space */
-      margin: 0 10px; /* Space between boxes */
-      max-width: 70%;
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 60%;
     }
     div.welcome-box2 {
-      flex: 4; /* Each box will grow equally to fill available space */
-      margin: 0 10px; /* Space between boxes */
-      max-width: 30;
-    }
-    div.welcome-box3 {
-      flex: 3; /* Each box will grow equally to fill available space */
-      margin: 0 10px; /* Space between boxes */
-      max-width: 30;
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 40%;
     }
 
-    div.welcome-box4{
-      flex: .5; /* Each box will grow equally to fill available space */
+    div.facts-container {
+      display: flex;
+      justify-content: space-between; /* Distribute space between the text boxes */
     }
+
+    div.facts {
+      flex: 1; /* Make each text box take up equal space */
+    }
+    
 
 
 
@@ -416,7 +406,6 @@ main {
     div.welcome-container {
       display: flex;
       justify-content: space-between; /* Distributes space between flex items */
-      padding: 10px;
       box-sizing: border-box;
     }
 
