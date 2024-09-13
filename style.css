@@ -483,8 +483,13 @@ main {
     }
 
     nav {
+      padding-left: 10rem;
+      padding-top: 2rem;
+  
       max-width: 80%;
       position: fixed;
+      z-index: ;
+  
   
     }
     
@@ -533,7 +538,13 @@ main {
     }
 
     nav {
+      padding-left: 9rem;
+      padding-top: 2rem;
+  
+      max-width: 80%;
       position: fixed;
+      z-index: ;
+  
   
     }
 
