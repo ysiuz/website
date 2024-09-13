@@ -359,11 +359,11 @@ main {
     div.welcome-box1 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 40%;
-      padding-right: 5rem;;
+      padding-right: 3rem;;
     }
     div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
-      max-width: 40%;
+      max-width: 60%;
     }
 
     div.facts-container {
@@ -549,8 +549,8 @@ main {
     }
 
     main {
-      padding-left: 10rem;
-      padding-right: 8rem;
+      padding-left: 11rem;
+      padding-right: 11rem;
     }
 
     h8 {
