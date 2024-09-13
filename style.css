@@ -199,8 +199,8 @@ main {
     backdrop-filter: blur(2.5px);
     /* margin is outside element */
     margin-top: 0rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 14.5rem;
+    padding-right: 14.5rem;
     margin-bottom: 3rem;
     position: relative;
     z-index: 2;
@@ -363,7 +363,7 @@ main {
     }
     div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
-      max-width: 60%;
+      max-width: 42%;
     }
 
     div.facts-container {
@@ -520,7 +520,6 @@ main {
   }
   div.welcome-box2 {
     flex: 5; /* Each box will grow equally to fill available space */
-    max-width: 55%;
   }
 
   
@@ -560,6 +559,12 @@ main {
     h7 {
       font-size: 60px;
     }
+
+    div.welcome-box2 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 55%;
+    }
+
   
   }
 
