@@ -57,10 +57,10 @@ a:link {
     color: #B9E2FF;
     text-decoration: none;
     text-decoration: ;
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    transition: all .1s ease; 
+    -webkit-transition: all .15s ease;
+    -moz-transition: all .15s ease;
+    -o-transition: all .15s ease;
+    transition: all .15s ease; 
     letter-spacing:   -1px;
 
 
