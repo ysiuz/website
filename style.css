@@ -168,7 +168,6 @@ h8 {
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-  color: #757575;
   line-height: 125%;
   display: inline;
   min-height: 100vh;
@@ -303,6 +302,10 @@ main {
     height: 1rem;
   }
 
+  div.tinybr {
+    height: .5rem;
+  }
+
   div.thumbnail-br {
     height: 5rem;
   }
@@ -358,12 +361,15 @@ main {
 
     div.welcome-box1 {
       flex: 5; /* Each box will grow equally to fill available space */
-      max-width: 40%;
-      padding-right: 3rem;;
+      max-width: 50%;
+      padding-right: 7rem;
     }
     div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
-      max-width: 42%;
+      max-width: 50%;
+      margin-right: 6rem;
+
+
     }
 
     div.content-box {
@@ -423,17 +429,7 @@ main {
       box-sizing: border-box;
     }
 
-    div.container-2{
-      display: flex;
-      justify-content: space-between; /* Distributes space between flex items */
-      box-sizing: border-box;
-      gap: 20px; /* Adjust gap size as needed */
-      width: 100%; /* Or a fixed width */
-    }
-
-    /* div.welcome-fact {
-    display: inline-block;
-    } */
+   
 
      div.about {
       max-width: 70vh;
@@ -535,13 +531,18 @@ main {
       font-size: 65px;
     }
 
-  div.welcome-box1 {
-    flex: 5; /* Each box will grow equally to fill available space */
-    max-width: 45%;
-  }
-  div.welcome-box2 {
-    flex: 5; /* Each box will grow equally to fill available space */
-  }
+    div.welcome-box1 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      padding-right: 3rem;
+    }
+    div.welcome-box2 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      margin-right: 2rem;
+
+
+    }
 
   
   }
