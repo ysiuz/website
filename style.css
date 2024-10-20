@@ -484,7 +484,6 @@ main {
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
   }
 
   div.more {
@@ -506,6 +505,14 @@ main {
     column-gap: none;
     margin: 0;
     max-width: 100%;
+  }
+
+  video {
+        /* Makes the video fill the full height of the container */
+    object-fit: fill;
+    display: block;
+      max-width: 100%;
+      height: auto;
   }
 
   /* laptop adjustments */
