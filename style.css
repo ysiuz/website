@@ -568,7 +568,7 @@ main {
     div.welcome-boxa1 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
-      padding-right: 5rem;
+      padding-right: 3rem;
     }
     div.welcome-boxa2 {
       flex: 5; /* Each box will grow equally to fill available space */
