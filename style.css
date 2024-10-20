@@ -370,12 +370,12 @@ main {
     div.welcome-box1 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
-      padding-right: 7rem;
+      padding-right: 5rem;
     }
     div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
-      margin-right: 6rem;
+      margin-right: 4rem;
 
 
     }
@@ -547,7 +547,7 @@ main {
     div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
-      margin-right: 2rem;
+      margin-right: 
 
 
     }
