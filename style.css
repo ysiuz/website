@@ -380,6 +380,19 @@ main {
 
     }
 
+    div.welcome-boxa1 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      padding-right: 5rem;
+    }
+    div.welcome-boxa2 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      margin-right: 4rem;
+
+
+    }
+
     div.content-box {
       flex: 1; /* Each box will grow equally to fill available space */
       overflow: hidden;
@@ -548,6 +561,19 @@ main {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
       margin-right: 0;
+
+
+    }
+
+    div.welcome-boxa1 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      padding-right: 5rem;
+    }
+    div.welcome-boxa2 {
+      flex: 5; /* Each box will grow equally to fill available space */
+      max-width: 50%;
+      margin-right: 4rem;
 
 
     }
