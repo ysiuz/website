@@ -190,7 +190,7 @@ main {
   nav {
     padding-left: 12rem;
     padding-top: 2rem;
-    max-width: 80%;
+    max-width: 75%;
     position: fixed;
     z-index: ;
   }
@@ -441,7 +441,7 @@ div.welcome-box2 {
       padding-left: 9rem;
       padding-top: 2rem;
   
-      max-width: 80%;
+      max-width: 75%;
       position: fixed;
       z-index: ;
   
@@ -510,37 +510,38 @@ div.welcome-box2 {
       position: fixed;
       z-index: 3;
       background-color: white;
-      padding-bottom: 1%;
+      padding-bottom: 1rem;
+      padding-right: 0;
+
       border-width: 0;
-      border-bottom-width: 1px;
+      border-bottom-width: 2px;
       border-style: solid;
       border-color:#5CBBFF;
-      margin: 0;
       box-sizing: border-box;
-      margin-left: 0;
-      margin-right: 0;
-      padding-bottom: 0;
-      padding-right: 0;
-      padding-left: 2rem;
     }
   
     header {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
       padding-bottom: 0;
-      padding-left: 0rem;
+    }
+
+    nav {
+      margin-top: 5rem;
+      padding-left: 0;
+    }
+
+
+    h1 {
+      font-size: 18pt;
     }
   
 
     /* end of 12182024 edits */
 
-    nav {
-     max-width: 1-00%
-    }
+    
 
-    h1 {
-      font-size: 25pt;
-    }
+    
 
     h2 {
       font-size: 25pt;
