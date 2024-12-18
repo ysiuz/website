@@ -185,6 +185,7 @@ main {
     margin-left: 2.5rem;
     margin-right: 2rem;
     padding-bottom: 3rem;
+    position: relative;
   }
 
   nav {
@@ -507,12 +508,11 @@ div.welcome-box2 {
 
     nav_project {
       padding-top: 1rem 0;
-      width: 100%;
+      width: calc(100% - 3rem); /* Adjust width based on the margin (left and right) */
       position: fixed;
       z-index: 3;
       background-color: white;
       padding-bottom: 1rem;
-      padding-right: 0;
       
 
       border-width: 0;
@@ -526,6 +526,10 @@ div.welcome-box2 {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       padding-bottom: 0;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure padding is included in the width */
+
     }
 
     nav {
