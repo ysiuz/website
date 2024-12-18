@@ -533,29 +533,37 @@ div.welcome-box2 {
 
 
     h1 {
-      font-size: 18pt;
+      font-size: 20pt;
     }
     
     h2 {
       font-family: "ppmori-bold", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       display: inline;
       line-height: 150%;
     }
   
     footer {
       position: relative;
-      width: 100%;
+      width: calc(100% - 3rem);
       bottom: 2rem;
-      padding:1.5rem;
+      padding: 2rem 0;
+      margin: 0 auto;
+      box-sizing: border-box;
 
     }
 
+    
     a:link {
       color: #FFA4E4;
       text-decoration: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none; 
+      letter-spacing: 0;
     }
 
     a:visited {
