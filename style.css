@@ -350,6 +350,12 @@ div.welcome-box2 {
   div.smallbr {
     height: 1rem;
   }
+
+  div.specialbr {
+    height: 25vh;
+    pointer-events: none;
+  }
+
 /* End of br's */
   
 
@@ -572,7 +578,7 @@ div.welcome-box2 {
 
     
     a:link {
-      color: #B9E2FF;
+      color: #FFA4E4;
       text-decoration: none;
       -webkit-transition: none;
       -moz-transition: none;
@@ -582,24 +588,34 @@ div.welcome-box2 {
     }
 
     a:visited {
-      color: #B9E2FF;
+      color: #FFA4E4;
     }
 
     a:hover {
-      color: #B9E2FF;
+      color: #FFA4E4;
       /* text-decoration: underline; */
-      text-decoration-color: #B9E2FF;
+      text-decoration-color: #FFA4E4;
       letter-spacing:  normal;
     }
 
     a:active {
-      color: #B9E2FF;
+      color: #FFA4E4;
     }
 
     a.message:link {
-      color: #B9E2FF;
+      color: #FFA4E4;
     }
 
+
+    div.hugebr {
+      height: 10vh;
+    }
+
+    div.specialbr {
+      height: 30vh;
+      pointer-events: none;
+    }
+  
   
 
     /* end of 12182024 edits */
@@ -625,10 +641,7 @@ div.welcome-box2 {
     div.fixbr {
       height: 17vh;
     }
-    div.hugebr {
-      height: 35vh;
-    }
-
+    
     div.smallbr {
       height: .5rem;
     }
