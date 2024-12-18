@@ -157,6 +157,15 @@ table {
     min-height: 100vh;
   }
 
+  h5 {
+    font-family: "offbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #5CBBFF;
+    line-height: 110%;
+  }
+
   body {
       font-family: "ppmori-regular", sans-serif;
       font-weight: 400;
@@ -518,7 +527,7 @@ div.welcome-box2 {
       position: fixed;
       z-index: 3;
       background-color: white;
-      padding-bottom: 1rem;
+      padding-bottom: .5rem;
       
 
       border-width: 0;
@@ -539,7 +548,7 @@ div.welcome-box2 {
     }
 
     nav {
-      margin-top: 5rem;
+      margin-top: 4rem;
       padding-left: 0;
     }
 
@@ -564,6 +573,15 @@ div.welcome-box2 {
       font-size: 14px;
       display: inline;
       line-height: 120%;
+    }
+
+    h5 {
+      font-family: "offbit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      color: #5CBBFF;
+      line-height: 110%;
     }
   
     footer {
