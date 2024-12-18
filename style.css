@@ -578,7 +578,7 @@ div.welcome-box2 {
 
     
     a:link {
-      color: #FFA4E4;
+      color: #5CBBFF;
       text-decoration: none;
       -webkit-transition: none;
       -moz-transition: none;
@@ -588,22 +588,22 @@ div.welcome-box2 {
     }
 
     a:visited {
-      color: #FFA4E4;
+      color: #5CBBFF;
     }
 
     a:hover {
-      color: #FFA4E4;
+      color: #5CBBFF;
       /* text-decoration: underline; */
-      text-decoration-color: #FFA4E4;
+      text-decoration-color: #5CBBFF;
       letter-spacing:  normal;
     }
 
     a:active {
-      color: #FFA4E4;
+      color: #5CBBFF;
     }
 
     a.message:link {
-      color: #FFA4E4;
+      color: #5CBBFF;
     }
 
 
