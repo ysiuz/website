@@ -197,7 +197,8 @@ main {
 
   nav_project {
     padding-top: 2rem;
-    max-width: 80%;
+    max-width: 100%;
+    
     position: fixed;
     z-index: 3;
   }
@@ -512,6 +513,7 @@ div.welcome-box2 {
       background-color: white;
       padding-bottom: 1rem;
       padding-right: 0;
+      
 
       border-width: 0;
       border-bottom-width: 2px;
@@ -544,6 +546,15 @@ div.welcome-box2 {
       display: inline;
       line-height: 150%;
     }
+
+    h3 {
+      font-family: "ppmori-regular-italic", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 14px;
+      display: inline;
+      line-height: 120%;
+    }
   
     footer {
       position: relative;
@@ -557,7 +568,7 @@ div.welcome-box2 {
 
     
     a:link {
-      color: #FFA4E4;
+      color: #B9E2FF;
       text-decoration: none;
       -webkit-transition: none;
       -moz-transition: none;
@@ -567,22 +578,22 @@ div.welcome-box2 {
     }
 
     a:visited {
-      color: #FFA4E4;
+      color: #B9E2FF;
     }
 
     a:hover {
-      color: #FFA4E4;
+      color: #B9E2FF;
       /* text-decoration: underline; */
-      text-decoration-color: #FFA4E4;
+      text-decoration-color: #B9E2FF;
       letter-spacing:  normal;
     }
 
     a:active {
-      color: #FFA4E4;
+      color: #B9E2FF;
     }
 
     a.message:link {
-      color: #FFA4E4;
+      color: #B9E2FF;
     }
 
   
@@ -594,9 +605,6 @@ div.welcome-box2 {
     
 
    
-    h3 {
-      font-size: 8pt;
-    }
     
     body {
       font-size: 10pt;
@@ -614,7 +622,7 @@ div.welcome-box2 {
       height: 17vh;
     }
     div.hugebr {
-      height: 18vh;
+      height: 35vh;
     }
 
     div.smallbr {
