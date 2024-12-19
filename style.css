@@ -558,7 +558,7 @@ div.welcome-box2 {
     nav {
       margin-top: 4rem;
       padding-left: 0;
-      width: calc(100% - 7.5rem); /* Adjust width based on the margin (left and right) */
+      width: calc(100% - 7.8rem); /* Adjust width based on the margin (left and right) */
 
       
     }
