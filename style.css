@@ -522,7 +522,7 @@ div.welcome-box2 {
     }
 
     nav_project {
-      padding-top: 1rem 0;
+      padding-top: .75rem;
       width: calc(100% - 3rem); /* Adjust width based on the margin (left and right) */
       position: fixed;
       z-index: 3;
@@ -597,7 +597,8 @@ div.welcome-box2 {
     
     a:link {
       color: #5CBBFF;
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: #B9E2FF;
       -webkit-transition: none;
       -moz-transition: none;
       -o-transition: none;
@@ -607,6 +608,8 @@ div.welcome-box2 {
 
     a:visited {
       color: #5CBBFF;
+      text-decoration: underline;
+      text-decoration-color: #B9E2FF;
     }
 
     a:hover {
@@ -618,10 +621,14 @@ div.welcome-box2 {
 
     a:active {
       color: #5CBBFF;
+      text-decoration: underline;
+      text-decoration-color: #B9E2FF;
     }
 
     a.message:link {
       color: #5CBBFF;
+      text-decoration: underline;
+      text-decoration-color: #B9E2FF;
     }
 
 
