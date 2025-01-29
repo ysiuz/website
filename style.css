@@ -167,6 +167,15 @@ table {
     line-height: 110%;
   }
 
+  h6 {
+    font-family: "offbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #5CBBFF;
+    line-height: 90%;
+  }
+
   body {
       font-family: "ppmori-regular", sans-serif;
       font-weight: 400;
@@ -382,7 +391,7 @@ div.welcome-box2 {
     h1 {
       font-weight: 400;
       font-style: normal;
-      font-size: 40px;
+      font-size: 30px;
       color: #5CBBFF;
       line-height: 110%;
     }
@@ -499,7 +508,7 @@ div.welcome-box2 {
       font-family: "offbit", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 30px;
+      font-size: 40px;
       color: #5CBBFF;
       line-height: 110%;
     }
