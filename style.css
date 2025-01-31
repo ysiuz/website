@@ -187,11 +187,22 @@ table {
       min-height: 100vh;
     }
 
-    bold {
+    bold-body {
       font-family: "ppmori-bold", sans-serif;
       font-weight: 800;
       font-style: bold;
       font-size: 18px;
+      color: black;
+      line-height: 125%;
+      display: inline;
+      min-height: 100vh;
+    }
+
+    bold-h4 {
+      font-family: "ppmori-bold", sans-serif;
+      font-weight: 800;
+      font-style: bold;
+      font-size: 25px;
       color: black;
       line-height: 125%;
       display: inline;
