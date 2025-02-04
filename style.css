@@ -188,14 +188,14 @@ table {
     }
 
     bold-body {
-      font-family: "ppmori-bold", sans-serif;
-      font-weight: 800;
-      font-style: bold;
-      font-size: 18px;
-      color: black;
-      line-height: 125%;
-      display: inline;
-      min-height: 100vh;
+    font-family: "ppmori-bold", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 18px;
+    color: black;
+    line-height: 125%;
+    display: inline;
+    min-height: 100vh;
     }
 
     bold-h4 {
@@ -215,22 +215,31 @@ table {
 main {
     backdrop-filter: blur(2.5px);
     margin-top: 0rem;
-    padding-left: 14.5rem;
-    padding-right: 14.5rem;
     margin-bottom: 3rem;
     position: relative;
     z-index: 2;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 11rem;
+    padding-left: 11rem;
+  }
+ 
+
+  header {
+    /* max-width: 1605px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    position: relative; */
+
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-
-  }
- 
-  header {
-    margin-left: 2.5rem;
-    margin-right: 2rem;
     padding-bottom: 3rem;
     position: relative;
+    padding-left: 2.5rem;
+    padding-right: 2rem;
   }
 
   nav {
@@ -259,9 +268,13 @@ main {
 /* Image/video containers */
 img.project {
   max-height: 40vw;
-  max-width: 60vw;
+  max-width: 1225px;
   display: block;
   margin: auto;
+}
+
+div.image-gallery {
+  max-width: 1225px;
 }
 
 div.dion-walking {
@@ -443,11 +456,8 @@ div.welcome-box2 {
   
     }
     
-    main {
-      padding-left: 12rem;
-      padding-right: 12rem;
-    }
-
+    
+    
     h3 {
       font-family: "ppmori-regular", sans-serif;
       font-weight: 400;
@@ -487,10 +497,23 @@ div.welcome-box2 {
       flex: 5; /* Each box will grow equally to fill available space */
       max-width: 50%;
       margin-right: 4rem;
-
+    
 
     }
 
+    main {
+      padding-right: 11rem;
+      padding-left: 11rem;
+      backdrop-filter: blur(2.5px);
+      margin-top: 0rem;
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   
   
   }
 
@@ -523,8 +546,15 @@ div.welcome-box2 {
 
 
     main {
-      padding-left: 11rem;
-      padding-right: 11rem;
+    }
+
+    header {
+        max-width: 1350px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3rem;
+        position: relative;
+      
     }
 
     h8 {
@@ -670,12 +700,12 @@ div.welcome-box2 {
     }
 
     header {
-      margin-left: 1.5rem;
+      margin-left: 0;
       margin-right: 1.5rem;
       padding-bottom: 0;
       position: relative;
       overflow: hidden;
-      box-sizing: border-box; /* Ensure padding is included in the width */
+      box-sizing: border-box; Ensure padding is included in the width
 
     }
 
@@ -702,13 +732,13 @@ div.welcome-box2 {
     }
 
     div.welcome-box1 {
-      flex: 5; /* Each box will grow equally to fill available space */
+      flex: 10; /* Each box will grow equally to fill available space */
       max-width: 100%;
       padding-right: 0;
       height: auto;
     }
     div.welcome-box2 {
-      flex: 5; /* Each box will grow equally to fill available space */
+      flex: ; /* Each box will grow equally to fill available space */
       max-width: 100%;
       margin-right: 0;
       height: auto;
