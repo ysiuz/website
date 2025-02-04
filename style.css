@@ -142,9 +142,9 @@ table {
     font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-    display: inline;
-    line-height: 125%;
+    font-size: 14px;
+    display: block;
+    line-height: 140%;
   }
 
 
@@ -220,6 +220,10 @@ main {
     margin-bottom: 3rem;
     position: relative;
     z-index: 2;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
  
   header {
@@ -448,9 +452,8 @@ div.welcome-box2 {
       font-family: "ppmori-regular", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 18px;
-      display: inline;
-      line-height: 140%;
+      font-size: 14px;
+      /* display: inline; */
     }
 
 
@@ -514,9 +517,8 @@ div.welcome-box2 {
       font-family: "ppmori-regular", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 18px;
-      display: inline;
-      line-height: 125%;
+      font-size: 14px;
+      /* display: inline; */
     }
 
 
@@ -586,8 +588,7 @@ div.welcome-box2 {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    display: inline;
-    line-height: 120%;
+    /* display: inline; */
   }
 
   h4 {
