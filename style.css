@@ -421,7 +421,7 @@ div.welcome-box2 {
 
 /* All br's */
   div.hugebr {
-    height: 25vh;
+    height: 10rem;
     pointer-events: none;
   }
 
