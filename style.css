@@ -713,15 +713,17 @@ div.welcome-box2 {
       border-style: solid;
       border-color:#5CBBFF;
       box-sizing: border-box;
+      left: 1.5rem;
+      right: 0;
     }
 
     header {
       margin-left: 0;
-      margin-right: 1.5rem;
+      margin-right: 0;
       /* padding-bottom: 0; */
       position: relative;
       overflow: hidden;
-      box-sizing: border-box; Ensure padding is included in the width
+      box-sizing: border-box; 
 
     }
 
