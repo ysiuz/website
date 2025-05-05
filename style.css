@@ -50,13 +50,71 @@ table {
 /* My code starts here!!! */
 
 
+.browser-mockup {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.browser-bar {
+  background: #eee;
+  padding: 8px 16px;
+  font-family: sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+
+.circles {
+  display: flex;
+  gap: 6px;
+}
+
+.circles span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background: #f25f58; }
+.yellow { background: #fdbc40; }
+.green { background: #34c84a; }
+
+.url {
+  margin-left: 12px;
+  color: #888;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.mockup-wrapper {
+  background-color: #5CBBFF;
+  display: flex;
+  align-items: center;     /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  height: 740px;           /* 💡 Set fixed height here */
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.browser-mockup {
+  margin-top: 105px;
+  transform: scale(0.85);
+  transform-origin: top center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Start of type-specific styles */
 
   a:link {
       color: #B9E2FF;
       text-decoration: none;
-      text-decoration: ;
+      text-decoration: none;
       -webkit-transition: all .15s ease;
       -moz-transition: all .15s ease;
       -o-transition: all .15s ease;
