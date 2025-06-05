@@ -218,6 +218,15 @@ table {
     color: #303030;
   }
 
+  h4 a:link, h4 a:visited {
+    color: #37ABFF;
+  }
+
+  h4 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #37ABFF;
+  }
+
   h5 {
     font-family: "offbit", sans-serif;
     font-weight: 400;
