@@ -420,8 +420,16 @@ a.gallery-anchor {
   text-decoration: none;
 }
 
+a.gallery-anchor body {
+  color: #303030;
+}
+
 a.gallery-anchor:hover {
   background-color: #F0F0F0;
+}
+
+a.gallery-anchor:hover h3 {
+  color: #37ABFF;
 }
   
 
