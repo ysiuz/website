@@ -227,6 +227,11 @@ table {
     text-decoration-color: #37ABFF;
   }
 
+  a {
+    display: inline;
+    white-space: normal;
+  }
+
   h5 {
     font-family: "offbit", sans-serif;
     font-weight: 400;
@@ -252,7 +257,7 @@ table {
       font-size: 18px;
       color: #303030;
       line-height: 150%;
-      display: inline;
+      display: block;
       min-height: 100vh;
     }
 
@@ -581,6 +586,8 @@ div.welcome-box1 {
 div.welcome-box2 {
   flex: 2; /* Each box will grow equally to fill available space */
   max-width: 50%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 div.project-container {
@@ -607,6 +614,27 @@ div.project-box2 {
   max-width: 33%;
   text-align: left;
   /* border: 1px solid #000; */
+}
+
+.center-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.center-text a:link, .center-text a:visited {
+  color: #37ABFF;
+  display: inline;
+}
+
+.center-text a:hover {
+  text-decoration: underline;
+  text-decoration-color: #37ABFF;
 }
 /* Gallery container end */
 
@@ -794,10 +822,12 @@ div.project-box2 {
       height: auto;
     }
     div.welcome-box2 {
-      flex: ; /* Each box will grow equally to fill available space */
-      max-width: 100%;
+      flex: 2; /* Each box will grow equally to fill available space */
+      max-width: 50%;
       margin-right: 0;
       height: auto;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
   
 
