@@ -677,7 +677,7 @@ div.project-box2 {
   
 
 /* MOBILE ADJUSTMENTS START HERE: */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 
   
@@ -724,8 +724,7 @@ div.project-box2 {
 
   a:link {
     color: #5CBBFF;
-    text-decoration: underline;
-    text-decoration-color: #B9E2FF;
+    text-decoration: none;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -735,43 +734,65 @@ div.project-box2 {
 
   a:visited {
     color: #5CBBFF;
-    text-decoration: underline;
-    text-decoration-color: #B9E2FF;
+    text-decoration: none;
   }
 
   a:hover {
     color: #5CBBFF;
-    /* text-decoration: underline; */
-    text-decoration-color: #5CBBFF;
+    text-decoration: none;
     letter-spacing:  normal;
   }
 
   a:active {
     color: #5CBBFF;
-    text-decoration: underline;
-    text-decoration-color: #B9E2FF;
+    text-decoration: none;
   }
 
   a.message:link {
     color: #5CBBFF;
-    text-decoration: underline;
-    text-decoration-color: #B9E2FF;
+    text-decoration: none;
   }
 
 
 
 /* CONTAINTER ADJUSTMENTS */
     main {
-      padding:1.5rem;
+      padding: 0rem;
+      margin-left: 1rem;
+      margin-right:1rem;
+    }
+
+    .index-main {
+      padding: 0rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+    .intro {
+      padding: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .nav-inner {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .nav-outer {
+      margin-top: 0;
     }
 
     nav_project {
-      padding-top: .75rem;
-      width: calc(100% - 3rem); /* Adjust width based on the margin (left and right) */
+      padding-top: 0;
+      width: 100%;
       position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 3;
       background-color: white;
-      padding-bottom: .5rem;
+      padding-bottom: 0;
       
 
       border-width: 0;
@@ -779,8 +800,6 @@ div.project-box2 {
       border-style: solid;
       border-color:#5CBBFF;
       box-sizing: border-box;
-      left: 1.5rem;
-      right: 0;
     }
 
     header {
@@ -794,13 +813,31 @@ div.project-box2 {
     }
 
     nav {
-      margin-top: 4rem;
+      margin-top: 2rem;
       padding-left: 0;
-      width: calc(100% - 7.8rem); /* Adjust width based on the margin (left and right) */
+      width: calc(100% - 2rem); /* Adjust width based on the margin (left and right) */
+    }
+
+    .nav-buttons {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    .project-buttons {
+      display: none;
+    }
+
+    .special-buttons {
+      flex-direction: row;
+      gap: 0.5rem;
+      padding-right: 0;
+      border-right: none;
+      margin-right: 0;
+      margin-bottom: 0;
     }
 
     footer {
-      width: calc(100% - 3rem);
+      width: calc(100% - 2rem);
       margin: 0 auto; /* Centers the element */
       padding-bottom: 0;
       position: relative;
@@ -810,39 +847,65 @@ div.project-box2 {
 
     div.welcome-container {
       display: block;
-      justify-content: space-between; /* Distributes space between flex items */
       box-sizing: border-box;
       height: auto;
     }
 
     div.welcome-box1 {
-      flex: 10; /* Each box will grow equally to fill available space */
       max-width: 100%;
       padding-right: 0;
       height: auto;
+      margin-bottom: 1rem;
     }
     div.welcome-box2 {
-      flex: 2; /* Each box will grow equally to fill available space */
-      max-width: 50%;
+      max-width: 100%;
       margin-right: 0;
       height: auto;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
+
+    div.project-container {
+      display: block;
+      box-sizing: border-box;
+    }
+
+    div.project-box1 {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    div.project-box2 {
+      max-width: 100%;
+    }
   
 
 /* BREAK ADJUSTMENTS */
     div.hugebr {
-      height: 10vh;
+      height: 5rem;
+      pointer-events: none;
+    }
+
+    div.bigbr {
+      height: 2.5rem;
+      pointer-events: none;
+    }
+
+    div.smallbr {
+      height: 0.5rem;
+    }
+
+    div.tinybr {
+      height: 0.25rem;
     }
 
     div.specialbr {
-      height: 30vh;
+      height: 15vh;
       pointer-events: none;
     }
 
     div.special-mirco-br {
-      height: 1rem;
+      height: 0.5rem;
       pointer-events: none;
     }
 
@@ -856,7 +919,6 @@ div.project-box2 {
       max-width: 100%;
       max-height: 100%;
       height: auto;
-      max-height: ;
       display: block;
       margin: 0 auto;
     }
@@ -896,11 +958,11 @@ div.project-box2 {
     }
     
     div.smallbr {
-      height: .5rem;
+      height: 1rem;
     }
     
     div.bigbr {
-      height: 1rem;
+      height: 2rem;
     }
 
     div.thumbnail-br {
@@ -937,9 +999,9 @@ div.project-box2 {
     }
   
     
-    div.welcome-description: {
+    div.welcome-description {
       margin-right: none;
-    }1
+    }
 
     
     div.welcome-container {
@@ -959,7 +1021,7 @@ div.project-box2 {
     }
   
     div.more {
-      column-count: 2;
+      column-count: 1;
       column-gap: none;
       margin: 0;
       max-width: 100%;
@@ -1012,6 +1074,106 @@ hr {
 
 a:hover h2 {
   color: #37ABFF;
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  main {
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .index-main {
+    padding: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .intro {
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .nav-inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  div.welcome-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  div.welcome-box1,
+  div.welcome-box2 {
+    max-width: 100%;
+  }
+
+  div.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  div.project-box1,
+  div.project-box2 {
+    max-width: 100%;
+  }
+
+  .quick-facts_outer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .quick-facts_container {
+    max-width: 100%;
+  }
+}
+
+/* Small desktop adjustments */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .nav-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  main {
+    padding-right: 11rem;
+    padding-left: 11rem;
+  }
+
+  .index-main {
+    padding: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .intro {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* Large desktop adjustments */
+@media screen and (min-width: 1200px) {
+  main {
+    padding-right: 11rem;
+    padding-left: 11rem;
+  }
+
+  .index-main {
+    padding: 0rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .intro {
+    padding-right: 11rem;
+    padding-left: 11rem;
+  }
 }
 
 
