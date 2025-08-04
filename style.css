@@ -209,7 +209,7 @@ table {
     font-size: 23px;
     display: inline;
     line-height: 130%;
-    color: #303030;
+    color: #363636;
   }
 
   h3 {
@@ -229,7 +229,7 @@ table {
     font-size: 23px;
     display: inline;
     line-height: 140%;
-    color: #303030;
+    color: #363636;
   }
 
   h4 a:link, h4 a:visited {
@@ -269,7 +269,7 @@ table {
       font-weight: 400;
       font-style: normal;
       font-size: 18px;
-      color: #303030;
+      color: #363636;
       line-height: 150%;
       display: block;
       min-height: 100vh;
@@ -303,7 +303,7 @@ table {
       font-weight: 800;
       font-style: bold;
       font-size: 25px;
-      color: black;
+      color: #363636;
       line-height: 125%;
       display: inline;
       min-height: 100vh;
@@ -502,8 +502,8 @@ div.dion-walking {
   display: block;
   margin: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: 6rem;
+  margin-left: 15rem;
+  margin-right: auto;
 }
 
 img.full-content {
@@ -705,7 +705,7 @@ div.project-box2 {
 
   h2 {
     font-family: "ppmori-bold", sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     font-style: normal;
     font-size: 18px;
     display: inline;
@@ -713,8 +713,8 @@ div.project-box2 {
   }
 
   h3 {
-    font-family: "ppmori-semibold", sans-serif;
-    font-weight: 800;
+    font-family: "ppmori-regular", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     /* display: inline; */
@@ -959,7 +959,7 @@ div.project-box2 {
    
     
     body {
-      font-size: 10pt;
+      font-size: 12pt;
     }
     div.stuff {
       padding-bottom: 1rem;
@@ -1089,7 +1089,7 @@ hr {
   width: 100%;
 }
 
-a:hover h2 {
+a:hover h2{
   color: #37ABFF;
 }
 
