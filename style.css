@@ -204,7 +204,7 @@ table {
 
   h2 {
     font-family: "ppmori-semibold", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 23px;
     display: inline;
@@ -274,6 +274,11 @@ table {
       display: block;
       min-height: 100vh;
     }
+
+  b {
+    font-family: "ppmori-semibold", sans-serif;
+    font-weight: 600;
+  }
 
     button {
       font-family: "ppmori-regular", sans-serif;
