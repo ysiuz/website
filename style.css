@@ -223,10 +223,10 @@ table {
 
 
   h4 {
-    font-family: "ppmori-regular", sans-serif;
-    font-weight: 400;
+    font-family: "ppmori-semibold", sans-serif;
+    font-weight: 600;
     font-style: normal;
-    font-size: 23px;
+    font-size: 26px;
     display: inline;
     line-height: 140%;
     color: #363636;
@@ -250,9 +250,9 @@ table {
     font-family: "offbit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
-    color: #5CBBFF;
-    line-height: 110%;
+    font-size: 45px;
+    color: #303030;
+    line-height: 100%;
   }
 
   h6 {
@@ -377,6 +377,11 @@ main {
     left: 0;
     right: 0;
     padding: 0.8rem 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-outer.nav-hidden {
+    transform: translateY(-100%);
   }
 
   .nav-inner {

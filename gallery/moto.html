@@ -335,6 +335,29 @@
                                                                              
 
         </main>
+        
+        <script>
+          // Navigation slide functionality
+          let lastScrollTop = 0;
+          const nav = document.querySelector('.nav-outer');
+          const scrollThreshold = 50; // Minimum scroll distance before hiding/showing nav
+          
+          window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Only trigger if we've scrolled more than the threshold
+            if (Math.abs(scrollTop - lastScrollTop) > scrollThreshold) {
+              if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down - hide nav
+                nav.classList.add('nav-hidden');
+              } else {
+                // Scrolling up - show nav
+                nav.classList.remove('nav-hidden');
+              }
+              lastScrollTop = scrollTop;
+            }
+          });
+        </script>
         <div class="footer1">
             © Dion Lewis 2023 — Built with HTML/CSS. <a href="https://github.com/ysiuz/website" target="_blank"> Github. </a>
         </div>
