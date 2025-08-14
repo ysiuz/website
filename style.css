@@ -203,10 +203,10 @@ table {
   }
 
   h2 {
-    font-family: "ppmori-semibold", sans-serif;
-    font-weight: 600;
+    font-family: "ppmori-regular", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-size: 28px;
     display: inline;
     line-height: 130%;
     color: #363636;
@@ -222,15 +222,6 @@ table {
   }
 
 
-  h4 {
-    font-family: "ppmori-semibold", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 26px;
-    display: inline;
-    line-height: 140%;
-    color: #363636;
-  }
 
   h4 a:link, h4 a:visited {
     color: #37ABFF;
@@ -719,12 +710,12 @@ div.project-box2 {
   }
 
   h2 {
-    font-family: "ppmori-bold", sans-serif;
-    font-weight: 800;
+    font-family: "ppmori-regular", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 24px;
     display: inline;
-    line-height: 150%;
+    line-height: 130%;
   }
 
   h3 {
@@ -994,7 +985,7 @@ div.project-box2 {
     }
     
     div.bigbr {
-      height: 2rem;
+      height: 4rem;
     }
 
     div.thumbnail-br {
