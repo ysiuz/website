@@ -539,8 +539,17 @@ img.full-content {
   video {
     object-fit: fill;
     display: block;
-    max-width: 100%;
+    max-width: 60rem;
     height: auto;
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  video.full {
+    object-fit: fill;
+    display: block;
+    height: auto;
+    max-width: 100%;
     border-radius: 5px;
   }
 
