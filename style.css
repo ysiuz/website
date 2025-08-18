@@ -1204,3 +1204,58 @@ a:hover h2{
 
 
 }
+
+/* Fixed Navigation Panel */
+.fixed-nav-panel {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  border-radius: 5px;
+  padding:  0.25rem;
+}
+
+/* Hide navigation panel on tablet and smaller screens */
+@media screen and (max-width: 768px) {
+  .fixed-nav-panel {
+    display: none;
+  }
+}
+
+.nav-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.nav-panel-button {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  color: #969696;
+  font-family: 'PP Mori', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-align: left;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.nav-panel-button:hover {
+  background-color: #F0F0F0;
+  color: #37ABFF;
+}
+
+.nav-panel-button:active {
+  color: #37ABFF;
+}
+
+.nav-panel-button.active {
+  color: #37ABFF;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}

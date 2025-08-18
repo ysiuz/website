@@ -49,10 +49,6 @@
                              <a href="https://diondesigns.me/gallery/spoken.html">
                                 Sijaan Am
                              </a>
-
-                             <a href="#">
-                                Miyamoto
-                             </a>
                         </div>      
                     </div>
                 </div>
@@ -60,12 +56,22 @@
             
         </header>
 
+        <!-- Fixed Navigation Panel -->
+        <div class="fixed-nav-panel">
+            <div class="nav-panel-content">
+                <a href="#" class="nav-panel-button">Background</a>
+                <a href="#features" class="nav-panel-button">Features</a>
+                <a href="#process" class="nav-panel-button">Process</a>
+                <a href="#takeaway" class="nav-panel-button">Takeaway</a>
+            </div>
+        </div>
+
         <main>
             <div class="bigbr"></div>  
             <div class="bigbr"></div>  
 
 
-            <div class="intro">
+            <div class="intro" id="intro">
                 <div class="topper"> 
                     <!-- topper is a container for the top of the page -->
     
@@ -178,7 +184,7 @@
 
             <div class="project-descriptions"> 
                 <h3 style="color: #757575"> 
-                   <a href="https://www.twitch.tv/caseoh_" target="blank_">https://www.twitch.tv/caseoh_</a>
+                   Credit: <a href="https://www.twitch.tv/caseoh_" target="blank_">https://www.twitch.tv/caseoh_</a>
                 </h3>
             </div>
             <div class="bigbr"></div>
@@ -192,7 +198,7 @@
                         <p style="font-family: 'PP Mori', sans-serif; font-weight: 600; color: #37ABFF; margin-bottom: 10px;">Solution</p>
 
                         <h2>
-                            Lorebot makes catching up easy.
+                            A chat companion that keeps you in the moment.
                         </h2>
                         <div class="text-break"></div>
                         <p >
@@ -240,7 +246,7 @@
            <div class="project-descriptions"> 
 
             <h3 style="color: #757575"> 
-               <a href="https://www.twitch.tv/koibu" target="blank_">https://www.twitch.tv/koibu</a>
+               Credit: <a href="https://www.twitch.tv/koibu" target="blank_">https://www.twitch.tv/koibu</a>
             </h3>
             </div>
 
@@ -249,18 +255,18 @@
             
 
             <div class="bigbr"></div>
-            <div class="intro">
+            <div class="intro" id="features">
                 <h6>Features</h6>
                 <div class="smallbr"></div>
                 <hr>
             </div>
-            
-            <div class="bigbr"></div>
+            <div class="smallbr"></div>
+
 
             <div class="intro">
-                    <h2>Jumping with the Adventure Log</h2>
+                    <h2>Jump seamlessly between past and present</h2>
                     <div class="text-break"></div>
-                    <p>The log is a living catalog of stream moments which informs and allows viewers to <strong>jump between past & present.</strong></p>
+                    <p>The Adventure Log is a living catalog of stream moments which informs and allows viewers to jump back and forth between key stream moments and the live-stream.</p>
                 </div>
             <div class="smallbr"></div>
             <div class="smallbr"></div>
@@ -269,30 +275,21 @@
            </video>
 
             <div class="bigbr"></div>
-            <div class="smallbr"></div>
-            <div class="smallbr"></div>
 
             <div class="intro">
-                    <h2>Chat, Fact Check?</h2>
+                    <h2>Got a question? Ask Lorebot!</h2>
                     <div class="text-break"></div>
-                    <p><strong>All viewers can flag AI entries they deem inaccurate</strong> by requesting a re-roll on the entry.</p>
-                    <div class="text-break"></div>
-                    <p>With enough requests, stream administrators are notified, and can then prompt the AI directly to improve the re-rolled entry.</p>
+                    <p>Chatters can @Lorebot to ask it questions about the stream right in the chat.</p>
                 </div>
             <div class="smallbr"></div>
-            <div class="smallbr"></div>
-            <video width="100%" loop autoplay muted>
-                <source src="../../images/lorebot/20250205_feature_reroll-comp_e1_com.mp4" type="video/mp4">
-           </video>
+
+           <video width="100%" loop autoplay muted>
+            <source src="../../images/lorebot/20250205_query-in-chat_com.mp4" type="video/mp4">
+       </video>
            <div class="smallbr"></div>
-           <div class="project-descriptions"> 
-                <h3 style="color: #757575"> 
-                    Viewer POV <--------------------------------------------------------> Admin POV
-                </h3>
-            </div>
+          
             <div class="bigbr"></div>
-            <div class="smallbr"></div>
-            <div class="smallbr"></div>
+
 
             <div class="intro">
                     <h2>Asking @Lorebot</h2>
@@ -302,7 +299,7 @@
             <div class="smallbr"></div>
             <div class="smallbr"></div>
             <video width="100%" loop autoplay muted>
-                <source src="../../images/lorebot/20250205_query-in-chat_com.mp4" type="video/mp4">
+                <source src="../../images/lorebot/20250205_feature_reroll-comp_e1_com.mp4" type="video/mp4">
            </video>
 
             <div class="bigbr"></div>
@@ -347,7 +344,7 @@
                     </div>
                 </div> -->
 
-                <div class="project-descriptions"> 
+                <div class="project-descriptions" id="process"> 
                     <h6>
                         1. Process Snapshot
                     </h6>
@@ -497,7 +494,7 @@
                         <div class="hugebr"></div>
 
 
-                        <div class="intro">
+                        <div class="intro" id="takeaway">
                     <h1>Credits & notes.</h1>
                     <div class="tinybr"></div>
                     <h3>Nov-December 2024</h3>  
@@ -533,6 +530,62 @@
               lastScrollTop = scrollTop;
             }
           });
+
+          // Navigation panel active state functionality
+          const navButtons = document.querySelectorAll('.nav-panel-button');
+          
+          function updateActiveNav() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            
+            // Remove active class from all buttons
+            navButtons.forEach(button => button.classList.remove('active'));
+            
+            // Check if we're at the very top (Background section)
+            if (scrollTop < 100) {
+              const backgroundButton = document.querySelector('[href="#"]');
+              if (backgroundButton) {
+                backgroundButton.classList.add('active');
+              }
+              return;
+            }
+            
+            // Check other sections
+            const sections = [
+              { id: 'features', button: document.querySelector('[href="#features"]') },
+              { id: 'process', button: document.querySelector('[href="#process"]') },
+              { id: 'takeaway', button: document.querySelector('[href="#takeaway"]') }
+            ];
+            
+            // Find which section is currently in view
+            for (let i = sections.length - 1; i >= 0; i--) {
+              const section = document.getElementById(sections[i].id);
+              if (section) {
+                const rect = section.getBoundingClientRect();
+                // Check if section is in view (top of section is above middle of viewport)
+                if (rect.top <= windowHeight * 0.5) {
+                  if (sections[i].button) {
+                    sections[i].button.classList.add('active');
+                  }
+                  break;
+                }
+              }
+            }
+            
+            // If we're at the bottom and no section is active, activate Takeaway
+            if (scrollTop + windowHeight >= document.documentElement.scrollHeight - 100) {
+              const takeawayButton = document.querySelector('[href="#takeaway"]');
+              if (takeawayButton) {
+                takeawayButton.classList.add('active');
+              }
+            }
+          }
+          
+          // Update active state on scroll
+          window.addEventListener('scroll', updateActiveNav);
+          
+          // Update active state on page load
+          updateActiveNav();
         </script>
     </body>
     
