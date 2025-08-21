@@ -345,6 +345,15 @@ main {
 
   }
 
+  .core {
+    margin-top: 0rem;
+    position: relative;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
   header {
     /* max-width: 1605px;
     margin-left: auto;
@@ -688,7 +697,7 @@ div.project-box2 {
   }
 
   div.smallbr {
-    height: 1rem;
+    height: 2rem;
   }
   div.tinybr {
     height: .5rem;
@@ -719,45 +728,53 @@ div.project-box2 {
 
   
 /* TYPE ADJUSTMENTS */
+
   h1 {
-    font-size: 20pt;
+    font-family: "offbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 115%;
+    color: #363636;
+    display: inline;
   }
 
   h2 {
-    font-family: "ppmori-regular", sans-serif;
+    font-family: "offbit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    display: inline;
-    line-height: 130%;
+    font-size: 50px;
+    color: #303030;
+    line-height: 100%;
   }
 
-  h3 {
+    h3 {
     font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
-    /* display: inline; */
+    font-size: 25px;
+    display: inline;
+    line-height: 130%;
+    color: #363636;
   }
 
   h4 {
     font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-    line-height: 125%;
-    display: inline;
-    min-height: 100vh;
+    font-size: 15px;
+    display: block;
+    line-height: 140%;
   }
-
+  
   h5 {
     font-family: "offbit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
-    color: #5CBBFF;
-    line-height: 110%;
+    font-size: 25px;
+    line-height: 100%;
   }
+
 
   a:link {
     color: #5CBBFF;
@@ -807,8 +824,11 @@ div.project-box2 {
 
     .intro {
       padding: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin: 0 .5rem;
+    }
+
+        .core {
+      padding: 0rem;
     }
 
     .nav-inner {
@@ -820,7 +840,7 @@ div.project-box2 {
       margin-top: 0;
     }
 
-    nav_project {
+    .nav_project {
       padding-top: 0;
       width: 100%;
       position: fixed;
@@ -929,7 +949,7 @@ div.project-box2 {
     }
 
     div.smallbr {
-      height: 0.5rem;
+      height: 2rem;
     }
 
     div.tinybr {
@@ -995,7 +1015,7 @@ div.project-box2 {
     }
     
     div.smallbr {
-      height: 1rem;
+      height: 2rem;
     }
     
     div.bigbr {
