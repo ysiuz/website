@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!-- the DOCTYPE declaration tells the file reader (in this case browser) that we're using HTML. If you just see "HTML" that means it's HTML5 -->
+<html lang="en">
+  <!-- the html element startsmwith tag and ends with another. The first tage lookls like this -->
+  <head>
+    <!-- the head element includes information about the page -->
+    <meta charset="UTF-8" />
+    <!-- te meta charset tag declares which kinds of characters are supported -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the meta viewport tag makes this site responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this makes the site work better with microsoft browsers -->
+    <title> Dion Lewis - Atlas </title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../images/favicon.svg">
+   </head>
+
+    <body>
+        <header>
+            <nav class="nav-outer">
+                <div class="nav-inner">
+                    <div class="nav-buttons">
+                        <div class="special-buttons">
+                            <a href="https://diondesigns.me/index.html" class="nav-button">
+                                <h5>☁</h5>&nbsp;Work
+                            </a>
+                            <a href="https://diondesigns.me/about.html" class="nav-button">
+                                <h5>☺</h5>&nbsp; About
+                            </a>
+                        </div>
+                        <div class="project-buttons">
+
+                            <!-- Projects:  -->
+                            <a href="#" target="_blank" class="active">
+                                Atlas
+                            </a>
+                            <a href="https://diondesigns.me/gallery/lorebot.html">
+                               Lorebot
+                            </a>
+                            <a href="https://diondesigns.me/gallery/inuit.html">
+                                Life & Death
+                             </a>
+
+                             <a href="https://diondesigns.me/gallery/stone.html">
+                                Bom Jesus
+                             </a>
+
+                             <a href="https://diondesigns.me/gallery/spoken.html">
+                                Sijaan Am
+                             </a>
+                        </div>      
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!-- Fixed Navigation Panel -->
+        <div class="fixed-nav-panel">
+            <div class="nav-panel-content">
+                <a href="#" class="nav-panel-button">Background</a>
+                <a href="#features" class="nav-panel-button">Features</a>
+                <a href="#process" class="nav-panel-button">Process</a>
+                <a href="#takeaway" class="nav-panel-button">Takeaway</a>
+            </div>
+        </div>
+
+        <main>
+            <div class="bigbr"></div>  
+            <div class="bigbr"></div>  
+
+
+            <div class="core" id="core">
+                <div class="topper"> 
+                    <!-- topper is a container for the top of the page -->
+    
+                    <!-- Project title and goal -->
+                    <h2>Atlas</h2>
+                                                                                       <div class="text-break"></div>
+                    <!-- <h3>Making local news faster and more pertinent.</h3>
+                    
+                    <div class="smallbr"></div> -->
+         
+                    <hr>
+        
+                    <div class="smallbr"></div>
+        
+                    <!-- Quick facts -->
+               
+                            <div class="quick-facts_outer-container">
+                                <div class="quick-facts_container">
+                                    <h4 style="color: #757575">Duration</h4>    
+                                                            <div class="text-break"></div>
+
+                                        <h4>Jan—May 2025</h4> 
+                                </div>
+                                <div class="quick-facts_container">
+                                    <h4 style="color: #757575">Role</h4>   
+                                                                                       <div class="text-break"></div>
+
+                                            <h4>   Sole Designer</h4>
+                                            <h4> Solde Developer</h4>
+                                       
+                                    </div>
+                                <div class="quick-facts_container">
+                                    <h4 style="color: #757575">Skills</h4>   
+                                     <div class="text-break"></div>
+
+                                        <h4>Interaction Design</h4>
+                                        <h4>Data Visualization</h4>
+                                        <h4>Prototyping</h4>
+                                        <h4>Development</h4>
+                                </div>
+
+                                <div class="quick-facts_container">
+                                    <h4 style="color: #757575">Tools</h4>   
+                                     <div class="text-break"></div>
+
+                                        <h4>Figma</h4>
+                                        <h4>JavaScript (d3.js)</h4>
+                                        <h4>HTML/CSS</h4>
+                                        <h4>Python</h4>
+                                        <h4>OpenAI Whisper</h4>
+                                        <h4>CLIP, BLIP, OCR</h4>
+
+                                </div>
+
+                            </div>
+
+                    
+        
+                            
+
+                    </div>          
+                </div>
+
+ 
+            </div>
+
+            <div class="bigbr"></div>
+            <div class="core">
+                <p class="subtitle">
+                    An interactive web platform that visualizes user’s social media consumption habits and connections to combat algorithmic bubbles.
+                </p>
+            </div>
+
+            <div class="smallbr"></div>
+
+            <div class="project-descriptions"> 
+                        <a href="https://ysiuz.github.io/20250224_force-directed_exp/" 
+                target="_blank" 
+                class="prototype-button">
+                View Live Prototype↗
+                </a>
+            </div>
+
+            <div class="smallbr"></div>
+
+             <video class="border" width="100%" loop autoplay muted>
+                <source src="../media/chronicle/thumbnail.mp4" type="video/mp4">
+            </video>
+
+            <div class="bigbr"></div>
+
+<!-- core CONTENT -->
+
+
+            <div class="core">
+                  
+
+                        <p class="blue-subtitle">Problem</p>
+
+                        <p class="subtitle">Social media algorithms are opaque</p>
+                        <p style="color: #757575">
+                            It’s hard to grasp just how narrow our digital view can be-or how far it may diverge from the experiences of others.                        </p>  
+                        <div class="smallbr"></div>
+                        <div class="image-gallery-border">
+                            <img class="project" src="../media/chronicle/chronicle-current.png" alt="Information architecture diagram showing core flows, onboarding, scrolling feed, tip submission, feed filtering, and smaller features like the map modal and expandable posts.">
+                        </div>
+                        <div class="bigbr"></div>
+
+                       <p class="subtitle">2. Openings news is losing traction at current reporting speed</p>
+                        <p style="color: #757575">
+                            Restaurant openings were often bundled into monthly lists, making coverage too slow. We need to report with greater urgency to keep stories timely and engaging.
+
+                        </p>
+                        <div class="smallbr"></div>
+                        <div class="image-gallery-border">
+                            <img class="project" src="../media/chronicle/current-list.png" alt="Information architecture diagram showing core flows, onboarding, scrolling feed, tip submission, feed filtering, and smaller features like the map modal and expandable posts.">
+                        </div>
+                        <div class="bigbr"></div>
+
+                        <p class="subtitle">3. Newsroom tipping is underutilized</p>
+                        <p style="color: #757575">
+                            Local coverage relies on reader tips, but our current system is fragmented and underused. We need a more intuitive, accessible way for readers to contribute news.
+                        </p>  
+                        <div class="smallbr"></div>
+
+                        <div class="image-gallery-border">
+                            <img class="project" src="../media/chronicle/current-tip.png" alt="Information architecture diagram showing core flows, onboarding, scrolling feed, tip submission, feed filtering, and smaller features like the map modal and expandable posts.">
+                        </div>
+                        <div class="text-break"></div>
+                        <div class="project-descriptions">                             
+                            <h4 style="color: #757575">Current tip submission page</h4 >                            
+                        </div>   
+                        
+                                 
+            </div>
+
+            <div class="bigbr"></div>
+
+        
+
+            <div class="project-descriptions"> 
+                                    <h3 style="color: #757575">Pertinence, immediacy, transparency</h3>
+            </div>
+
+            <div class="bigbr"></div>
+
+            <div class="core">
+
+                        <p class="blue-subtitle">Solution</p>
+
+                       <p class="subtitle">
+                            A reader-driven feed for local openings and closings
+                        </p>
+                        <p style="color: #757575">
+                            Shaped by local tips, and content filters, the feed delivers quick, relevant news.
+                        </p>
+                                    <div class="text-break"></div>
+
+
+            <video width="50%" loop autoplay muted>
+            <source src="../media/chronicle/solution-vid.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="bigbr"></div>
+
+            
+
+               
+            <div class="core">
+
+               <p class="subtitle">Information Architecture</p>
+                        <div class="text-break"></div>
+                <p style="color: #757575">
+                    I identified the need for 4 core flows for a functional product, which include a scrolling feed, onboarding, tip submission, and feed filtering.
+
+                </p>
+                <div class="smallbr"></div>
+
+                <div class="image-gallery">
+                    <img class="project" src="../media/chronicle/information-architecture.png" alt="Information architecture diagram showing core flows, onboarding, scrolling feed, tip submission, feed filtering, and smaller features like the map modal and expandable posts.">
+                </div>    
+
+              
+            </div>
+         
+
+               
+<!-- core flows -> -->
+            
+
+            <div class="bigbr"></div>
+            <div class="core" id="features">
+                <h2>Core Experiences</h2>
+                <div class="text-break"></div>
+                <hr>
+            </div>
+            <div class="smallbr"></div>
+
+            <div class="core">
+                                <p class="blue-subtitle">Scrolling Feed</p>
+
+               <p class="subtitle">Post Types - News at multiple scales</p>
+                <p style="color: #757575">
+                        Snippets, expandable stories, tip responses, sponsored posts, and ads coexist, balancing immediacy with depth and monetization.
+                </p>  
+
+                                             <div class="smallbr"></div>
+
+                                 <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Expandable post</h4 >                            
+                </div>   
+                <video width="50%" loop autoplay muted>
+                <source src="../media/chronicle/expandable-post_vid.mp4" type="video/mp4">
+                </video>
+
+                                <div class="smallbr"></div>
+                            <div class="image-gallery">
+                                <img class="project" src="../media/chronicle/post-ensemble.png" alt="Lorebot in action on Twitch">
+                            </div>    
+                       <div class="bigbr"></div>
+            </div>
+            <div class="core">
+
+               <p class="subtitle">Feed Layout - Familiar news but faster</p>
+                <p style="color: #757575">
+                        A scrolling feed inspired by social apps, emphasizing writers as trusted voices rather than relying on polished visuals and lengthy stories.
+                </p>  
+                                                    <div class="text-break"></div>
+
+
+                <video width="50%" loop autoplay muted>
+                <source src="../media/chronicle/solution-vid.mp4" type="video/mp4">
+                </video>
+
+            </div>
+<!-- 
+      
+                <div class="smallbr"></div>
+                <div class="process"> 
+                     <h4 style="font-weight: 600">* Why such an emphasis on immediacy?</p>
+                    <div class="text-break"></div>
+                    <h4 style="color: #757575">
+                        /insert mario quote card about feed helpfulness/
+                    </h4>
+                </div> -->
+             
+
+
+            
+          
+            <div class="bigbr"></div>
+
+
+            <div class="core">
+           <p class="subtitle">
+                Map Modal: Adding spatial context
+            </p>
+            <p style="color: #757575">
+                Beyond just listing an address, a visual map intuitively lets readers know
+                where a business is, and if they'd be willing to travel to it. 
+            </p>
+            <div class="text-break"></div>
+
+            <div class="media-row">
+                <video loop autoplay muted>
+                <source src="../media/chronicle/map-modal_vid.mp4" type="video/mp4">
+                </video>
+
+                <img class="project-half" 
+                    src="../media/chronicle/map-modal.png" 
+                    alt="Map modal mockup">
+            </div>
+            </div>
+
+
+                        <div class="bigbr"></div>
+
+  <div class="core">
+                <p class="blue-subtitle">Onboarding</p>
+
+               <p class="subtitle">Introducing a news feed, tipping, and content filtering</p>
+                <p style="color: #757575">
+                        Intro modals and a dedicated filters page explain the concept of a fast, reader-informed news feed.
+                </p>  
+   
+                                                   <div class="text-break"></div>
+
+                
+                <video width="50%" loop autoplay muted>
+                <source src="../media/chronicle/onboarding_vid.mp4" type="video/mp4">
+                </video>
+
+                                            <div class="text-break"></div>
+                            <div class="image-gallery">
+                                <img class="project" src="../media/chronicle/onboarding-comp.png" alt="Lorebot in action on Twitch">
+                            </div>    
+
+                <div class="smallbr"></div>
+                <div class="process"> 
+                     <h4 style="font-weight: 600">Introducing filters through a dedicated page</h4>
+                                         <div class="text-break"></div>
+                     <h4 style="color: #757575">
+                        Rather than relying on temporary modals, the onboarding points users to the filters page, creating a consistent, reusable place to manage preferences.
+                    </h4 >
+                <div class="smallbr"></div>
+                    <div class="welcome-container">
+                        <div class="welcome-box1">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">Before</h4>
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="image-gallery">
+                                <img class="project" src="../media/chronicle/before_onboarding-filter.png" alt="Lorebot in action on Twitch">
+                            </div>    
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Onboarding directly prompts initial filtering in one-off modals.</h4 >                            
+                            </div>                                                   
+                        </div>
+
+                        <div class="welcome-box2">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">After</h4>
+                            </div>                            
+                            <div class="text-break"></div>
+                                <div class="image-gallery">
+                                    <img class="project" src="../media/chronicle/after_onboarding-filter.png" alt="Lorebot in action on Twitch">
+                                </div>
+                            <div class="text-break"></div>  
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Onboarding modal prompts user to visit filters page to filter feed. </h4 >                            
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+    </div>      
+
+            <div class="bigbr"></div>
+
+       <div class="core">
+                <p class="blue-subtitle">
+                   Tip Submission
+                </p>
+
+               <p class="subtitle">Incentivising productive reader contributions</p>
+                <p style="color: #757575">
+                        Readers can quickly draft, submit, and choose visibility for their tips, creating transparency in how the newsroom may respond to their information.
+                </p>  
+            
+            <div class="text-break"></div>
+            <video width="50%" loop autoplay muted>
+                <source src="../media/chronicle/tip-submission_vid.mp4" type="video/mp4">
+            </video>
+                <div class="smallbr"></div>
+                <div class="process"> 
+                     <h4 style="font-weight: 600">Prioritizing clarity over brevity in tip submission</h4>
+                                         <div class="text-break"></div>
+                     <h4 style="color: #757575">
+                        I expanded the tipster experience from a single dropdown panel into a series of pages to ensure clarity and avoid overwhelming readers with too many steps at once.
+                            </h4 >
+                    <div class="smallbr"></div>
+                    <div class="welcome-container">
+                        <div class="welcome-box1">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">Before</h4>
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/before_tipster_edit.png" alt="Lorebot in action on Twitch">
+                            </div>    
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Single tip chat field and tip visibility panel.</h4 >                            
+                            </div> 
+                        </div>
+
+                        <div class="welcome-box2">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">After</h4>
+                            </div>                           
+                             <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/after_tipster_edit.png" alt="Lorebot in action on Twitch">
+                            </div>   
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Multi-page tipster flow shows one task at a time.</h4>                            
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                            <div class="bigbr"></div>
+        </div>
+       <div class="core">
+                <p class="blue-subtitle">
+                   Feed Filtering
+                </p>
+
+               <p class="subtitle">Giving readers more control over their feed</p>
+                <div class="text-break"></div>
+                <p style="color: #757575">
+                        Accessible filters let readers shape their feed, ensuring relevance without overwhelming choice.
+
+                </p>  
+            
+            <video width="50%" loop autoplay muted>
+                 <source src="../media/chronicle/feed-filtering_vid.mp4" type="video/mp4">
+           </video>
+                <div class="smallbr"></div>
+
+                <div class="process"> 
+                     <h4 style="font-weight: 600">Dropping the regional filter map for simplicity</h4>
+                                         <div class="text-break"></div>
+                     <h4 style="color: #757575">
+                        Despite an early interest in a map that could visualize selected regions, the feature was dropped to avoid unnecessary information and consolidate space on the filters page.
+                            </h4 >
+                    <div class="smallbr"></div>
+                    <div class="welcome-container">
+                        <div class="welcome-box1">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">Before</h4>
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/before_filter-map-edit.png" alt="Lorebot in action on Twitch">
+                            </div>    
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">Map visualizes regional filter choices.</h4 >                            
+                            </div> 
+                        </div>
+                        <div class="welcome-box2">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">After</h4>
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/after_filter-map-edit.png" alt="Lorebot in action on Twitch">
+                            </div> 
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">
+                                        Map removed to streamline filters page.
+                                </h4 >                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            <div class="bigbr"></div>
+                <div class="process"> 
+                     <h4 style="font-weight: 600">Reducing emphasis on filter tags in feed</h4>
+                                         <div class="text-break"></div>
+                     <h4 style="color: #757575">
+                        Filter tags highlight personalization in the feed, but we kept them simple to avoid clutter and to ensure they don’t feel like clickable controls.
+                    <div class="smallbr"></div>
+                    <div class="welcome-container">
+                        <div class="welcome-box1">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">Before</h4>
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/before_filter-feed_edit.png" alt="Lorebot in action on Twitch">
+                            </div> 
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">
+                                      Overly prominent filter tags imply interactivity.
+                                </h4 >                             
+                            </div>
+                        </div>
+                        <div class="welcome-box2">
+                            <div class="project-descriptions">                             
+                                <h4 style="font-weight: 600">After</h4>
+                            </div>     
+                            <div class="text-break"></div>
+                            <div class="image-gallery-border">
+                                <img class="project" src="../media/chronicle/after_filter-feed_edit.png" alt="Lorebot in action on Twitch">
+                            </div>
+                            <div class="text-break"></div>
+                            <div class="project-descriptions">                             
+                                <h4 style="color: #757575">
+                                    Subtle filter tags let post content shine.
+                                </h4 >                             
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="bigbr"></div>
+    </div>  
+            <div class="core" id="features">
+                <h2>Results</h2>
+                <div class="text-break"></div>
+                <hr>
+            </div>
+            <div class="smallbr"></div>
+
+
+                <div class="core">
+                <p class="blue-subtitle">
+                   Outcome
+                </p>
+
+               <p class="subtitle">A new product finding it's footing</p>
+                <p style="color: #757575">
+                        Through my prototypes, discussions, and presentations, the Chronicle largely validated the need for a robust Openings & Closings vertical. Newsroom leaders are now building on my work to move it toward launch.
+
+                </p>  
+                </div>
+
+            <div class="bigbr"></div>
+
+                <div class="core">
+                    <p class="blue-subtitle">
+                    Takeaways
+                    </p>
+
+                   <p class="subtitle">Taking a chance and the lead</p>
+                        <p style="color: #757575">
+                                I touched every aspect of this product precisely because it was an ambiguous space, that seemed interesting but far off to the newsroom. By prototyping I resolved some of that ambiguity, leading to more constructive conversations and clearer goals.
+                        </p>  
+                    
+                    <div class="smallbr"></div>
+
+                                   <p class="subtitle">Prototype at a tangible fidelity</p>
+                        <p style="color: #757575">
+                                I skipped early wireframes to quickly experiment with Chronicle UI patterns and create prototypes stakeholders could engage with meaningfully, without getting bogged down in rough visuals.
+                        </p>
+                      <div class="smallbr"></div>
+
+                                                   <p class="subtitle">Leaning on subject matter experts</p>
+                        <p style="color: #757575">
+                                I drew on colleagues’ and mentors’ journalism expertise, learning from their first-hand experience in reporting, regional strategy, audience, and monetization, to inform my design decisions.
+                        </p>  
+                    </div>
+                </div>  
+                </div>
+                  
+                            <div class="bigbr"></div>
+
+<!-- Background info stuff -->
+           
+        </main>
+        
+        <script>
+          // Navigation slide functionality
+          let lastScrollTop = 0;
+          const nav = document.querySelector('.nav-outer');
+          const scrollThreshold = 50; // Minimum scroll distance before hiding/showing nav
+          
+          window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Only trigger if we've scrolled more than the threshold
+            if (Math.abs(scrollTop - lastScrollTop) > scrollThreshold) {
+              if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down - hide nav
+                nav.classList.add('nav-hidden');
+              } else {
+                // Scrolling up - show nav
+                nav.classList.remove('nav-hidden');
+              }
+              lastScrollTop = scrollTop;
+            }
+          });
+
+          // Navigation panel active state functionality
+          const navButtons = document.querySelectorAll('.nav-panel-button');
+          
+          function updateActiveNav() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            
+            // Remove active class from all buttons
+            navButtons.forEach(button => button.classList.remove('active'));
+            
+            // Check if we're at the very top (Background section)
+            if (scrollTop < 100) {
+              const backgroundButton = document.querySelector('[href="#"]');
+              if (backgroundButton) {
+                backgroundButton.classList.add('active');
+              }
+              return;
+            }
+            
+            // Check other sections
+            const sections = [
+              { id: 'features', button: document.querySelector('[href="#features"]') },
+              { id: 'process', button: document.querySelector('[href="#process"]') },
+              { id: 'takeaway', button: document.querySelector('[href="#takeaway"]') }
+            ];
+            
+            // Find which section is currently in view
+            for (let i = sections.length - 1; i >= 0; i--) {
+              const section = document.getElementById(sections[i].id);
+              if (section) {
+                const rect = section.getBoundingClientRect();
+                // Check if section is in view (top of section is above middle of viewport)
+                if (rect.top <= windowHeight * 0.5) {
+                  if (sections[i].button) {
+                    sections[i].button.classList.add('active');
+                  }
+                  break;
+                }
+              }
+            }
+            
+            // If we're at the bottom and no section is active, activate Takeaway
+            if (scrollTop + windowHeight >= document.documentElement.scrollHeight - 100) {
+              const takeawayButton = document.querySelector('[href="#takeaway"]');
+              if (takeawayButton) {
+                takeawayButton.classList.add('active');
+              }
+            }
+          }
+          
+          // Update active state on scroll
+          window.addEventListener('scroll', updateActiveNav);
+          
+          // Update active state on page load
+          updateActiveNav();
+        </script>
+    </body>
+    
+                        
+            
+
+
+
