@@ -354,7 +354,6 @@ video.border {
 /* universal containers */
 main {
     margin-top: 0rem;
-    margin-bottom: 3rem;
     position: relative;
     max-width: calc(2000px - 2rem);
     margin-left: auto;
@@ -519,19 +518,15 @@ a.gallery-anchor {
 }
 
 a.gallery-anchor body {
-  color: #303030;
+  color: #969696;
 }
 
 a.gallery-anchor:hover {
   background-color: #F0F0F0;
 }
 
-a.gallery-anchor:hover h3 {
-  color: #37ABFF;
-}
-  
-a.gallery-anchor:hover h1 {
-  color: #37ABFF;
+a.gallery-anchor:hover {
+  color: #757575;
 }
 
 img.project {
