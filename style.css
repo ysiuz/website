@@ -625,13 +625,7 @@ img.full-content {
     border-radius: 5px;
   }
 
-  video.full {
-    object-fit: fill;
-    display: block;
-    height: auto;
-    max-width: 100%;
-    border-radius: 5px;
-  }
+
 
   /* .inner-box img {
     width: 100%;
