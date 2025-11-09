@@ -312,14 +312,18 @@ video.border {
   text-decoration: underline;
   text-decoration-style: dotted;
    text-decoration-color: #37ABFF; 
-   text-underline-offset: 5px
+   text-underline-offset: 5px;
 }
 
 
-.secondary-text a:hover {
-  color: #37ABFF;
+.secondary-text a:hover,
+.secondary-text a:focus {
+  color: #37ABFF !important;
   text-decoration: underline;
+  text-decoration-color: #37ABFF; 
+  text-decoration-style: solid;
 }
+
 
 .secondary-text a:visited {
   color: #969696;
