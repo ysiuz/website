@@ -308,7 +308,7 @@ video.border {
 }
 
 
-.secondary-text a {
+.secondary-text a, .primary-text a {
   text-decoration: underline;
   text-decoration-style: dotted;
    text-decoration-color: #37ABFF; 
@@ -316,8 +316,8 @@ video.border {
 }
 
 
-.secondary-text a:hover,
-.secondary-text a:focus {
+.secondary-text a:hover, .primary-text a:hover,
+.secondary-text a:focus, .primary-text a:focus {
   color: #37ABFF !important;
   text-decoration: underline;
   text-decoration-color: #37ABFF; 
@@ -325,7 +325,7 @@ video.border {
 }
 
 
-.secondary-text a:visited {
+.secondary-text a:visited, .primary-text a:visited {
   color: #969696;
 }
 
@@ -1244,11 +1244,11 @@ a.gallery-anchor {
   height: 0.75rem;
 }
 
-.secondary-text {
+.primary-text {
   color: #969696;
 }
 
-.secondary-text a {
+.primary-text a {
   text-decoration: underline;
   text-decoration-style: dotted;
    text-decoration-color: #37ABFF; 
@@ -1256,13 +1256,37 @@ a.gallery-anchor {
 }
 
 
-.secondary-text a:hover {
+.primary-text a:hover {
   color: #37ABFF;
   text-decoration: underline;
 }
 
-.secondary-text a:visited {
+.primary-text a:visited {
   color: #969696;
+}
+
+.primary-text {
+  color: #000; /* black for regular text */
+}
+
+.primary-text a {
+  color: #969696; /* grey for links at rest */
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #37ABFF; 
+  text-underline-offset: 5px;
+}
+
+.primary-text a:hover,
+.primary-text a:focus {
+  color: #37ABFF; /* blue on hover */
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #37ABFF; 
+}
+
+.primary-text a * {
+  color: inherit;
 }
 
 hr {
