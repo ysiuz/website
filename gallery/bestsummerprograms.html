@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- the DOCTYPE declaration tells the file reader (in this case browser) that we're using HTML. If you just see "HTML" that means it's HTML5 -->
+<html lang="en">
+  <!-- the html element startsmwith tag and ends with another. The first tage lookls like this -->
+  <head>
+    <!-- the head element includes information about the page -->
+    <meta charset="UTF-8" />
+    <!-- te meta charset tag declares which kinds of characters are supported -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the meta viewport tag makes this site responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this makes the site work better with microsoft browsers -->
+    <title>Dion Lewis - BestSummerPrograms</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../../images/favicon.svg" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XWJLCTCXFF"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-XWJLCTCXFF");
+  </script>
+  <body>
+    <header>
+      <nav class="nav-outer">
+        <div class="nav-inner">
+          <div class="nav-buttons">
+            <div class="name">
+              <a href="../index.html">
+                <h5>Dion Lewis</h5>
+              </a>
+            </div>
+            <div class="special-buttons">
+              <!-- <a href="https://ysiuz.github.io/20250224_force-directed_exp/"
+          target="_blank" class="nav-button">
+                  View Prototype↗
+              </a> -->
+              <a href="../index.html" class="nav-button">
+                <h5>☁</h5>
+                &nbsp; Work
+              </a>
+              <a href="../about.html" class="nav-button">
+                <h5>☺</h5>
+                &nbsp;About
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Fixed Navigation Panel -->
+    <!-- <div class="fixed-nav-panel">
+      <div class="nav-panel-content">
+        <a href="#" class="nav-panel-button">Background</a>
+        <a href="#features" class="nav-panel-button">Core Experiences</a>
+        <a href="#takeaway" class="nav-panel-button">Results</a>
+      </div>
+    </div> -->
+
+    <main>
+      <div class="bigbr"></div>
+      <div class="bigbr"></div>
+
+      <div class="core" id="core">
+        <div class="topper">
+          <!-- topper is a container for the top of the page -->
+
+          <!-- Project title and goal -->
+          <h2>BestSummerPrograms</h2>
+          <div class="text-break"></div>
+                  BestSummerPrograms is a free web platform built to help students and families navigate the complex & costly landscape of high school summer programs.
+          <div class="text-break"></div>
+          <!-- <h3>Making local news faster and more pertinent.</h3>
+                    
+                    <div class="smallbr"></div> -->
+
+          <hr />
+
+          <div class="smallbr"></div>
+
+          <!-- Quick facts -->
+
+          <div class="quick-facts_outer-container">
+            <div class="quick-facts_container">
+              <h4 style="color: #757575">Duration</h4>
+          <div class="text-break"></div>
+
+              <h4>Sept 2025—Present</h4>
+            </div>
+            <div class="quick-facts_container">
+              <h4 style="color: #757575">Role</h4>
+              <div class="text-break"></div>
+
+              <h4>Product Designer</h4>
+            </div>
+            <div class="quick-facts_container">
+                                    
+                                    <h4 style="color: #757575">Collaborators</h4>   
+                                        <div class="text-break"></div>
+                                          <h4>
+                                            <a href="https://www.ethanhuangdesign.com/" class="link-dotted" target="_blank" rel="noopener noreferrer">
+                                              Ethan Huang,
+                                            </a>
+                                            <span style="color: #757575;">Lead Developer + Designer</span>
+                                          </h4>
+                                        <h4>Saul Lelchuk, <span style="color: #757575;"> Founder</span></h4>
+                                        <h4> Yuer Zhu,<span style="color: #757575;"> Product Designer</span></h4>
+
+            </div>
+            <!-- ss -->
+
+            <!-- <div class="quick-facts_container">
+              <h4 style="color: #757575">Tools</h4>
+              <div class="text-break"></div>
+
+              <h4>Figma</h4>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bigbr"></div>
+      <div class="core">
+        <p class="subtitle">
+          As a product designer, I build core UI elements, refine existing design systems, and define UX flows for new features like program comparison. <br> 
+        </p>
+          <div class="text-break"></div>
+
+        <p class="subtitle">
+          This work is ongoing, reach out for more.
+        </p>
+      </div>
+
+      <div class="smallbr"></div>
+
+      <!-- <div class="project-descriptions">
+        <a
+          href="https://ysiuz.github.io/20250224_force-directed_exp/"
+          target="_blank"
+          class="prototype-button"
+        >
+          View Prototype↗
+        </a>
+      </div> -->
+
+      <div class="smallbr"></div>
+
+         <img
+              class="topper"
+              src="../images/bsp/thumbnail_4.png"
+       />
+
+
+      <div class="bigbr"></div>
+
+      <!-- core CONTENT -->
+<!-- s
+      <!-- Background info stuff -->
+      <script>
+        // Navigation slide functionality
+        let lastScrollTop = 0;
+        const nav = document.querySelector(".nav-outer");
+        const scrollThreshold = 50; // Minimum scroll distance before hiding/showing nav
+
+        window.addEventListener("scroll", function () {
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+
+          // Only trigger if we've scrolled more than the threshold
+          if (Math.abs(scrollTop - lastScrollTop) > scrollThreshold) {
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+              // Scrolling down - hide nav
+              nav.classList.add("nav-hidden");
+            } else {
+              // Scrolling up - show nav
+              nav.classList.remove("nav-hidden");
+            }
+            lastScrollTop = scrollTop;
+          }
+        });
+
+        // Navigation panel active state functionality
+        const navButtons = document.querySelectorAll(".nav-panel-button");
+
+        function updateActiveNav() {
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          const windowHeight = window.innerHeight;
+
+          // Remove active class from all buttons
+          navButtons.forEach((button) => button.classList.remove("active"));
+
+          // Check if we're at the very top (Background section)
+          if (scrollTop < 100) {
+            const backgroundButton = document.querySelector('[href="#"]');
+            if (backgroundButton) {
+              backgroundButton.classList.add("active");
+            }
+            return;
+          }
+
+          // Check other sections
+          const sections = [
+            {
+              id: "features",
+              button: document.querySelector('[href="#features"]'),
+            },
+            {
+              id: "process",
+              button: document.querySelector('[href="#process"]'),
+            },
+            {
+              id: "takeaway",
+              button: document.querySelector('[href="#takeaway"]'),
+            },
+          ];
+
+          // Find which section is currently in view
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const section = document.getElementById(sections[i].id);
+            if (section) {
+              const rect = section.getBoundingClientRect();
+              // Check if section is in view (top of section is above middle of viewport)
+              if (rect.top <= windowHeight * 0.5) {
+                if (sections[i].button) {
+                  sections[i].button.classList.add("active");
+                }
+                break;
+              }
+            }
+          }
+
+          // If we're at the bottom and no section is active, activate Takeaway
+          if (
+            scrollTop + windowHeight >=
+            document.documentElement.scrollHeight - 100
+          ) {
+            const takeawayButton = document.querySelector('[href="#takeaway"]');
+            if (takeawayButton) {
+              takeawayButton.classList.add("active");
+            }
+          }
+        }
+
+        // Update active state on scroll
+        window.addEventListener("scroll", updateActiveNav);
+
+        // Update active state on page load
+        updateActiveNav();
+      </script>
+    </main>
+  </body>
+</html>
