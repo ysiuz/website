@@ -590,7 +590,7 @@ img.topper {
   height: auto;
   margin: auto;
   border-radius: 5px;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 
