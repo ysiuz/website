@@ -804,7 +804,8 @@ div.intro-box2 {
 
 .quick-facts_outer-container {
   display: flex;
-  gap: 3rem; /* Adjust as needed for spacing */
+  justify-content: space-between; /* spreads items across the width */
+  flex-wrap: wrap;                /* allows them to form two columns */
 }
 
 .quick-facts_container {
@@ -870,13 +871,10 @@ div.intro-box2 {
   height: 0.75rem;
 }
 
-/* End of br's */
-  
-
-
- 
-  /* laptop adjustments */
-
+.long-title {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
   
 
 /* MOBILE ADJUSTMENTS START HERE: */
@@ -887,11 +885,11 @@ a.gallery-anchor {
   border-radius: 5px;
   text-decoration: none;
 }
-  .quick-facts_outer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+.quick-facts_outer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 2rem; /* spacing between items */
+}
 
   .quick-facts_container {
     max-width: 100%;
@@ -922,11 +920,11 @@ a.gallery-anchor {
     h3 {
     font-family: "ppmori-regular", sans-serif;
     font-weight: 400;
+    font-size: 20px;
     font-style: normal;
-    font-size: 25px;
-    display: inline;
-    line-height: 130%;
     color: #363636;
+      margin-bottom: 10px;  /* adjust as needed */
+
   }
 
   h4 {
@@ -1413,12 +1411,11 @@ div.project-container {
     max-width: 100%;
   }
 
-  .quick-facts_outer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
+.quick-facts_outer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 1.5rem; /* spacing between items */
+}
   .quick-facts_container {
     max-width: 100%;
   }
