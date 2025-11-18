@@ -189,6 +189,15 @@ table {
     font-display: swap;
   }
 
+    @font-face {
+    font-family: 'ppmori-medium';
+    src: url('fonts/PPMori-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
 
 
   h1 {
@@ -211,13 +220,14 @@ table {
   }
 
     h3 {
-    font-family: "ppmori-regular", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 28px;
+    font-family: "ppmori-medium", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
     display: inline;
-    line-height: 130%;
+    line-height: 140%;
     color: #363636;
+        display: block;       /* important — restore block behavior */
+  margin-bottom: 10px;  /* adjust as needed */
   }
 
   h4 {
