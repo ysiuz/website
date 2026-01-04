@@ -806,12 +806,14 @@ div.intro-box2 {
   display: flex;
   justify-content: space-between; /* spreads items across the width */
   flex-wrap: wrap;                /* allows them to form two columns */
+
 }
 
 .quick-facts_container {
   /* Remove flex: 1 and width: 50% */
   text-align: left;
   /* border: 1px solid #000; */
+
 }
 
 .center-text {
