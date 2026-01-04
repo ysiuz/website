@@ -60,8 +60,12 @@
     <!-- Fixed Navigation Panel -->
     <div class="fixed-nav-panel">
       <div class="nav-panel-content">
-        <a href="#" class="nav-panel-button">Background</a>
-        <a href="#features" class="nav-panel-button">Core Experiences</a>
+        <a href="#" class="nav-panel-button">Product Context</a>
+        <a href="#" class="nav-panel-button">Problem</a>
+        <a href="#" class="nav-panel-button">Goal</a>
+        <a href="#" class="nav-panel-button">Solution</a>
+        <a href="#features" class="nav-panel-button">Desktop Experiences</a>
+        <a href="#features" class="nav-panel-button">Mobile Experiences</a>
         <a href="#takeaway" class="nav-panel-button">Results</a>
       </div>
     </div>
@@ -130,7 +134,7 @@
       <div class="bigbr"></div>
       <div class="core">
         <h3>
-          Designing a native program comparison feature that streamlines how users decide between options on BestSummerPrograms.        
+          Designing an internal comparison tool that helps users put program info in context and decide which they want to save and apply to.
         </h3>
       </div>
 
@@ -172,7 +176,7 @@
         <p class="blue-subtitle">Problem</p>
         <h3>Comparing programs wasn’t natively supported</h3>
         <p style="color: #757575">
-              Comparing costs, location, affiliation, and other details is essential for informed application decisions, yet we lacked a native way to compare programs.
+              Comparing program costs, location, affiliation, and other details is essential for informed application decisions, yet we lacked a native way to compare programs.
 
        
         </p>
@@ -210,7 +214,7 @@
         <p class="blue-subtitle">Goal</p>
         <h3>Reduce program comparison friction</h3>
         <p style="color: #757575">
-              Speed up program shortlisting by supporting comparison directly within the platform, enabling faster, more informed decisions.
+             Our focus was to support program comparison directly within the platform, making it easier for users to evaluate options and make informed decisions.
 
 
        
@@ -233,7 +237,7 @@
          Compare as you browse, accessible across the site
         </h3>
         <p style="color: #757575">
-            Users can mark programs for comparison from multiple entry points, adding them to a persistent taskbar as they browse. When ready, they can compare selected programs side by side.
+            Users can mark programs for comparison from multiple entry points, adding them to a persistent taskbar as they browse. When ready, they can compare selected programs side by side, evaluating them based on their individual needs.
 
         <div class="smallbr"></div>
         <video width="100%" loop autoplay muted>
@@ -270,18 +274,16 @@
 
       <div class="core" id="features">
         <div class="project-descriptions">
-          <h1>❷ Core Experiences</h1>
+          <h1>❷  Desktop Experiences</h1>
         </div>
         <div class="text-break"></div>
         <hr />
         <div class="text-break"></div>
         <div class="text-break"></div>
-        <p class="blue-subtitle">The map</p>
-        <h3>Color coded content map</h3>
+        <p class="blue-subtitle">Checkbox Entry Point</p>
+        <h3>Click Compare Program to get started</h3>
         <p style="color: #757575">
-          With 400 video submitted by 20 unique users, I used ML tools—Whisper, CLIP, BLIP, and
-          OCR—to categorize and color-code each one, forming distinct genre
-          regions.
+          I added a Compare checkbox to the action section on program pages, making comparisons accessible sitewide.
         </p>
       </div>
       
@@ -304,22 +306,20 @@
         <div class="bigbr"></div>
 <div class="core">
         <div class="process">
-          <h4 style="font-weight: 600">
-            Choosing abstraction over detail for visual clarity
-          </h4>
+          <p style="font-weight: 600">
+            Preserving action hierarchy
+          </p>
           <div class="text-break"></div>
-          <h4 style="color: #757575">
-            <!-- Opaque, high-contrast colors clarify genre regions and make user
-            icons stand out, while video thumbnails and tags add unnecessary
-            visual noise. -->
-
-Early thumbnail previews were replaced by opaque genre colors to reduce information overload at scale.          </h4>
+          <p style="color: #757575">
+            To keep the primary action (Add to Program List) prominent and avoid clutter, I incorporated Comparison as a secondary action above the action panel.
+          </p>
           <div class="smallbr"></div>
         </div>
+
           <div class="welcome-container">
             <div class="welcome-box1">
               <div class="project-descriptions">
-                <h4 style="font-weight: 600">Before</h4>
+                <p style="font-weight: 600">Before</p>
               </div>
               <div class="text-break"></div>
               
@@ -329,13 +329,13 @@ Early thumbnail previews were replaced by opaque genre colors to reduce informat
               <div class="text-break"></div>
               <div class="project-descriptions">
                 <h4 style="color: #757575">
-                  Thumbnails communicate well individually, but create visual clutter in aggregate.
+                  Sticky panel contains important deadlines and “add to program list button”
                 </h4>
               </div>
             </div>
             <div class="welcome-box2">
               <div class="project-descriptions">
-                <h4 style="font-weight: 600">After</h4>
+                <p style="font-weight: 600">After</p>
               </div>
               <div class="text-break"></div>
                <div class="image-gallery">
@@ -344,7 +344,7 @@ Early thumbnail previews were replaced by opaque genre colors to reduce informat
               <div class="text-break"></div>
               <div class="project-descriptions">
                 <h4 style="color: #757575">
-                  Video previews are hidden behind opaque genre colors - sustainable at scale.
+                  Sticky panel adds compare checkbox subpanel
                 </h4>
               </div>
             </div>
@@ -352,176 +352,127 @@ Early thumbnail previews were replaced by opaque genre colors to reduce informat
         
 
         <div class="bigbr"></div>
-        
-                <div class="process">
-                  <h4 style="font-weight: 600">
-                      Prioritizing organic structure over rigidity to fit a fluid content ecosystem
-                  </h4>
-                  <div class="text-break"></div>
-                  <h4 style="color: #757575">
-                      Early maps were overly rigid, and didn't reflect the chaotic short-form media environment. The final map is more organic, only introducing legible structure through user interaction.
-                  </h4>
-                  <div class="smallbr"></div>
-                </div>
-                <div class="welcome-container">
-                    <div class="welcome-box1">
-                    <div class="project-descriptions">
-                        <h4 style="font-weight: 600">Before</h4>
-                    </div>
-                    <div class="text-break"></div>
-                    <video class="border" width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/map-iteration.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-                    <div class="text-break"></div>
-                    <div class="project-descriptions">
-                        <h4 style="color: #757575">
-                        A rigid ring, while legible, feels at odds with the realities of the  content ecosystem.
-                        </h4>
-                    </div>
-                    </div>
 
-                    <div class="welcome-box2">
-                    <div class="project-descriptions">
-                        <h4 style="font-weight: 600">After</h4>
-                    </div>
-                    <div class="text-break"></div>
-                    <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/map-current.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-                    <div class="text-break"></div>
-                    <div class="project-descriptions">
-                        <h4 style="color: #757575">
-                        The final map is chaotic, but creates space for legibility through interaction.
-                        </h4>
-                    </div>
-                    </div>
-                </div>
-                <div class="bigbr"></div>
-
-                <h3>Hover for quick info and links</h3>
+                <h3>Surfacing actions on hover to reduce friction</h3>
                 <p style="color: #757575">
-                Hashtags and video previews offer quick, hyper-specific context on
-                hover, while link lines reveal how content and users connect in a
-                broadened collective algorithm.
+                User testing revealed frustration with needing to open each program page to save or compare programs. We reduced this friction by exposing Save and Compare actions on hover, prior to page entry.
+
                 </p>
-                <div class="smallbr"></div>
+
+
+                 <div class="smallbr"></div>
+        <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
+
+                         <div class="bigbr"></div>
+
 </div>
-                <div class="welcome-container">
-                <div class="welcome-box1">
-                    <div class="project-descriptions">
-                    <h4 style="font-weight: 600">User Hover</h4>
-                    </div>
-                    <div class="text-break"></div>
-                    <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/hover-user.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-                    <div class="text-break"></div>
-                    <div class="project-descriptions">
-                    <h4 style="color: #757575">
-                        Hovering on a user highlights all the videos they’ve submitted.
-                    </h4>
-                    </div>
-                </div>
-
-                <div class="welcome-box2">
-                    <div class="project-descriptions">
-                    <h4 style="font-weight: 600">Video Hover</h4>
-                    </div>
-                    <div class="text-break"></div>
-                     <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/video-hover.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-                    <div class="text-break"></div>
-                    <div class="project-descriptions">
-                    <h4 style="color: #757575">
-                        Hovering a video plays a preview, provides a descriptive
-                        hashtag, and links to the submitter(s).
-                    </h4>
-                    </div>
-                </div>
-                </div>
-            </div>
-
+      <div class="core">
+        <div class="process">
+          <p style="font-weight: 600">
+            Gallery View Hover: Empowering informed users
+          </p>
+          <div class="text-break"></div>
+          <p style="color: #757575">
+            Affording users to Save or Compare from the gallery view itself allows users with prior knowledge of programs or universities of interest to act upon it.
+          </p>
+          <div class="smallbr"></div>
+                  <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
+        </div>
+      </div>
 
       <div class="bigbr"></div>
 
+            <div class="core">
+        <div class="process">
+          <p style="font-weight: 600">
+            Similar Program Hover: Leveraging similarity to prompt action
+          </p>
+          <div class="text-break"></div>
+          <p style="color: #757575">
+            Because the Similar Programs bar surfaces contextually related programs, extending the hover pattern here allows users to compare high-relevance options without leaving the page
+          </p>
+          <div class="smallbr"></div>
+                  <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
+        </div>
+      </div>
+
+            <div class="bigbr"></div>
+
       <div class="core">
-        <p class="blue-subtitle">Card overlays</p>
-        <h3>Click for info-rich cards</h3>
+        <p class="blue-subtitle">Compare Taskbar</p>
+        <h3>Keeping selected programs in view as you browse</h3>
         <p style="color: #757575">
-          Purely spatial layouts can make patterns visible, but leave details
-          unclear. Cards complement the map by presenting structured data in a
-          more familiar format.
+          The taskbar provides persistent visual feedback for selected programs, helping users stay oriented as they browse and add find more programs to compare.
         </p>
       </div>
         <div class="smallbr"></div>
-        <div class="welcome-container">
-          <div class="welcome-box1">
-            <div class="project-descriptions">
-              <h4 style="font-weight: 600">User Click</h4>
-            </div>
-            <div class="text-break"></div>
-             <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/user-click.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-            <div class="text-break"></div>
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                Clicking a user clusters their videos, and creates a user
-                analysis card.
-              </h4>
-            </div>
-          </div>
-
-          <div class="welcome-box2">
-            <div class="project-descriptions">
-              <h4 style="font-weight: 600">Video Click</h4>
-            </div>
-            <div class="text-break"></div>
-            <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/video-click.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-            <div class="text-break"></div>
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                Clicking a video creates a video player card and tethers the node to it's submitter until unselected.
-              </h4>
-            </div>
-          </div>
-        </div>
-    <div class="core">
-        <div class="bigbr"></div>
-        <h3>Multi-select users to compare and contrast</h3>
-        <p style="color: #757575">
-          Users aren’t limited to one perspective. By selecting multiple users
-          at once, they can trace where their algorithms overlap and diverge.
-        </p>
+                  <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
         <div class="smallbr"></div>
-        <video width="100%" loop autoplay muted>
-                        <source
-                        src="../images/atlas/multi-select.mp4"
-                        type="video/mp4"
-                        />
-                    </video>
-                            <div class="text-break"></div>
+        <div class="core">
+       <div class="image-gallery">
+                <img class="project" src="../images/atlas/opaque-nodes.png" />
+                </div>
+                
+        </div>  
+
+                    <div class="bigbr"></div>
+
+      <div class="core">
+        <h3>Collapsible, yet still informative and interactive</h3>
+        <p style="color: #757575">
+          When collapsed, the taskbar shrinks to a minimal strip, offering links to the programs and the ability to remove your selection on hover.
+        </p>
+      </div>
+        <div class="smallbr"></div>
+                  <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
+        <div class="smallbr"></div>
+        <div class="core">
+       <div class="image-gallery">
+                <img class="project" src="../images/atlas/opaque-nodes.png" />
+                </div>
+                
+        </div>  
+
+                            <div class="bigbr"></div>
+
+  
+  <div class="core">
+        <p class="blue-subtitle">Compare Modal</p>
+        <h3>See program details side by side</h3>
+        <p style="color: #757575">
+          The compare modal lays out each program’s core information—badges, affiliation, selectivity, cost, location, and more—so users can compare them in detail and decide which options to pursue.
+        </p>
+                <div class="smallbr"></div>
+
+       <div class="image-gallery">
+                <img class="project" src="../images/atlas/opaque-nodes.png" />
+                </div>
+                
+        </div>  
+      </div>
+        <div class="smallbr"></div>
+                  <video width="100%" loop autoplay muted>
+          <source src="../images/atlas/solution.mp4" type="video/mp4" />
+        </video>
+        <div class="smallbr"></div>
+        <div class="core">
+       <div class="image-gallery">
+                <img class="project" src="../images/atlas/opaque-nodes.png" />
+                </div>
+                
+        </div>  
+
+                    <div class="bigbr"></div>
 
 <div class="project-descriptions">
           <h4 style="color: #757575">
