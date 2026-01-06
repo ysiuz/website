@@ -632,11 +632,12 @@ img.emote {
   margin: auto;
 }
 div.image-gallery {
-  max-width: 1000px;
+  /* max-width: 1000px; */
+    justify-content: center;
 }
 
 div.image-gallery-border {
-  max-width: 1000px;
+  width: 100%;
   border-width: 2px;
   border-style: solid;
   border-color:#F0F0F0;
@@ -660,7 +661,17 @@ div.dion-walking {
   margin-right: auto;
 }
 
-img.full-content {
+img {
+    display: block;       /* allows margin auto to work */
+    margin-left: auto;    /* horizontal center */
+    margin-right: auto;   /* horizontal center */
+    max-width: 60rem;     /* same max-width as videos */
+    height: auto;         /* maintain aspect ratio */
+    border-radius: 5px;   /* same style as video */
+    object-fit: contain;  /* similar to video */
+}
+
+.full-content {
   max-width: 100%;
   height: auto;
 }
@@ -678,6 +689,15 @@ img.full-content {
     height: auto;
   }
 
+  img.border {
+  border-width: 2px;
+  border-style: solid;
+  border-color:#F0F0F0;
+  border-radius: 8px;
+  }
+
+
+
   .youtube-video {
     aspect-ratio: 16/9;
     width: 100%;
@@ -692,6 +712,16 @@ img.full-content {
     margin: auto;
     border-radius: 5px;
   }
+
+    image {
+    object-fit: fill;
+    display: block;
+    max-width: 60rem;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+  }
+
 
 
 
@@ -1159,7 +1189,7 @@ a.gallery-anchor {
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: auto;
     }
 
     img.welcome {
