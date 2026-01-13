@@ -247,6 +247,16 @@ table {
     line-height: 100%;
   }
 
+      h6 {
+    font-family: "ppmori-medium", sans-serif;
+    font-weight: 500;
+          font-size: 18px;
+      color: #363636;
+      line-height: 150%;
+    display: inline;
+        display: block;       /* important — restore block behavior */
+  }
+
   .subtitle {
   font-family: 'ppmori-semibold', sans-serif;
   font-weight: 600;
@@ -493,7 +503,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-        border-bottom: 2px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
     padding: 0.5rem 0;
 
   }
@@ -502,11 +512,8 @@ main {
     text-decoration: none;
     display: flex; 
     align-items: center;
-    padding-top: .4rem;
-    padding-bottom: .2rem;
     border-radius: 5px;
-    padding-left: .6rem;
-    padding-right: .6rem;
+    padding: 0.3rem 0rem;
     background-color: #F0F0F0;
   }
 
@@ -529,29 +536,27 @@ main {
   .special-buttons {
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: 2rem;
 
   }
 
   .nav-button,
-  .nav-button h1,
   .nav-button button {
-    color: #969696;
+    color: #363636;
+    background-color: white;
   }
 
   .nav-button:hover,
-  .nav-button:hover h1,
   .nav-button:hover * {
-    background-color: #37ABFF;
-    color: white;
+    /* background-color: #f0f0f0; */
+    color: #37ABFF;
     
   }
 
   .nav-button.active,
-  .nav-button.active h1,
   .nav-button.active * {
-    background-color: #37ABFF;
-    color: white;
+    /* background-color: #f0f0f0; */
+    color: #363636;
   }
 
   footer {
@@ -1087,7 +1092,7 @@ a.gallery-anchor {
 
     .special-buttons {
       flex-direction: row;
-      gap: 0.5rem;
+      gap: 2rem;
       padding-right: 0;
       border-right: none;
       margin-right: 0;
