@@ -639,6 +639,8 @@ img.emote {
 div.image-gallery {
   /* max-width: 1000px; */
     justify-content: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 div.image-gallery-border {
@@ -1065,6 +1067,12 @@ a.gallery-anchor {
       padding: 0rem;
     }
 
+    /* Ensure image-gallery outside core respects same boundaries */
+    div.image-gallery {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
     .nav-inner {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -1429,8 +1437,26 @@ hr {
   margin-bottom: 0;
   padding-bottom: 0;
   width: 100%;
+}
 
-
+/* Mobile adjustments for image-gallery outside core */
+@media screen and (max-width: 600px) {
+  div.image-gallery {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure images inside image-gallery respect container width */
+  div.image-gallery img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
 }
 
 }
@@ -1621,9 +1647,9 @@ html {
 .lightbox-content {
   position: relative;
   z-index: 10001;
-  max-width: calc(100% - 20rem);
-  max-height: calc(100% - 20rem);
-  margin: 10rem;
+  max-width: calc(100% - 10rem);
+  max-height: calc(100% - 10rem);
+  margin: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1642,7 +1668,7 @@ html {
 
 .lightbox-media {
   max-width: 100%;
-  max-height: calc(100vh - 20rem);
+  max-height: calc(100vh - 10rem);
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1651,11 +1677,28 @@ html {
   display: block;
 }
 
-.lightbox-close {
+.lightbox-close-container {
   position: absolute;
+  top: 0;
   left: calc(100% + 2rem);
-  top: 50%;
-  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002;
+  pointer-events: all;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox-close-container:hover {
+  opacity: 0.8;
+}
+
+.lightbox-close {
   width: 25px;
   height: 25px;
   background: transparent;
@@ -1665,9 +1708,8 @@ html {
   align-items: center;
   justify-content: center;
   padding: 0;
-  z-index: 10002;
   pointer-events: all;
-  color: white;
+  color: #363636;
   transition: opacity 0.2s ease;
 }
 

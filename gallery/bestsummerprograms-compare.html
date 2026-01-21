@@ -152,9 +152,41 @@ Building a comparison experience that helps students and families evaluate progr
       </div>
 
       <div class="smallbr"></div>
+      <div class="text-break"></div>
+
        <video class="border" width="100%" loop autoplay muted>
          <source src="../images/bsp-compare/compare-topper.mp4" type="video/mp4" />
         </video>
+
+        <div class="smallbr"></div>
+
+        <div class="image-gallery">
+          <img
+            src="../images/bsp-compare/check-highlight.png"
+            alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+          />
+        </div>
+
+        <div class="smallbr"></div>
+
+
+        <div class="image-gallery">
+          <img
+            src="../images/bsp-compare/taskbar-highlight.png"
+            alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+          />
+        </div>
+
+        <div class="smallbr"></div>
+
+        <div class="image-gallery">
+          <img
+            src="../images/bsp-compare/modal-highlight.png"
+            alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+          />
+        </div>
+
+        
 
        
           <!-- <div class="welcome-container">
@@ -272,7 +304,7 @@ Building a comparison experience that helps students and families evaluate progr
                   Comparing program details like cost and location is an essential part of making informed application decisions, but without a native comparison feature, users had to juggle tabs or take notes externally for context.
                 </p>
                 <div class="smallbr"></div>
-              </div>
+        </div>
                 <div class="image-gallery">
                   <img
                     src="../images/bsp-compare/problem-diagram.png"
@@ -323,12 +355,9 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="core">
         <p class="blue-subtitle">Solution</p>
-        <h3>A resuable comparison pattern, sitewide</h3>
+        <h3>A reusable, site-wide comparison system</h3>
         <p style="color: #757575">
-          Users can mark programs for comparison from multiple entry points,
-          adding them to a persistent taskbar as they browse. When ready, they
-          can compare selected programs side by side, evaluating them based on
-          their individual needs.
+          Users can select programs for comparison from multiple entry points, adding them to a persistent taskbar as they browse. When ready, they can compare selected programs side by side.
         </p>
 
                 <div class="smallbr"></div>
@@ -361,7 +390,7 @@ Building a comparison experience that helps students and families evaluate progr
 
          <div class="project-descriptions">
            <p>
-              Confirm
+              Review
            </p>
          </div>
        </div>
@@ -383,32 +412,38 @@ Building a comparison experience that helps students and families evaluate progr
        </div>
 
 
-   <div class="smallbr"></div>
+   <div class="bigbr"></div>
+   <div class="core">
+
+    <div class="project-descriptions">
+      <h3>Compare from program pages</h3>
+      <p style="color: #757575">For deeper evaluation as you learn</p>
+    </div>
+    <div class="smallbr"></div>
+    </div>
+
         <video class="border" width="100%" loop autoplay muted>
          <source src="../images/bsp-compare/program-page-compare.mp4" type="video/mp4" />
         </video>
-        <div class="text-break"></div>
 
-        <div class="project-descriptions">
-          <p>
-            Start a comparison from individual program pages.
-          </p>
-        </div>
+   
 
         <div class="bigbr"></div>
 
+    
+
+        <div class="core">
+
+        <div class="project-descriptions">
+          <h3>Compare from the gallery</h3>
+          <p style="color: #757575">For fast, high-level browsing</p>
+        </div>
+        <div class="smallbr"></div>
       </div>
       <video class="border" width="100%" loop autoplay muted>
        <source src="../images/bsp-compare/gallery-compare.mp4" type="video/mp4" />
       </video>
-      <div class="text-break"></div>
 
-      <div class="project-descriptions">
-        <h4 style="color: #757575">
-          Quickly compare programs from the gallery view.
-        </h4>
-      </div>
-        <div class="smallbr"></div>
 
         
 
@@ -798,9 +833,11 @@ Building a comparison experience that helps students and families evaluate progr
           <div class="lightbox-media-wrapper">
             <img id="lightbox-image" class="lightbox-media" style="display: none;" />
             <video id="lightbox-video" class="lightbox-media" style="display: none;" controls></video>
-            <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">
-              <i data-lucide="x"></i>
-            </button>
+            <div class="lightbox-close-container">
+              <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">
+                <i data-lucide="x"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -814,7 +851,7 @@ Building a comparison experience that helps students and families evaluate progr
         const lightboxContent = document.querySelector('.lightbox-content');
 
         // Get all images and videos with the relevant classes
-        const images = document.querySelectorAll('img.project, img.border');
+        const images = document.querySelectorAll('img.project, img.border, div.image-gallery img');
         const videos = document.querySelectorAll('video.border');
 
         // Function to open lightbox with image
@@ -888,7 +925,12 @@ Building a comparison experience that helps students and families evaluate progr
 
         // Close button functionality
         const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxCloseContainer = document.querySelector('.lightbox-close-container');
         lightboxClose.addEventListener('click', (e) => {
+          e.stopPropagation();
+          closeLightbox();
+        });
+        lightboxCloseContainer.addEventListener('click', (e) => {
           e.stopPropagation();
           closeLightbox();
         });
