@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="../../images/favicon.svg" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -152,7 +153,7 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="smallbr"></div>
        <video class="border" width="100%" loop autoplay muted>
-         <source src="../images/bsp-compare/core-interaction.mp4" type="video/mp4" />
+         <source src="../images/bsp-compare/compare-topper.mp4" type="video/mp4" />
         </video>
 
        
@@ -259,7 +260,7 @@ Building a comparison experience that helps students and families evaluate progr
             />
         </div> -->
           <video class="border" width="100%" loop autoplay muted>
-         <source src="../images/bsp-compare/202601061540.mp4" type="video/mp4" />
+         <source src="../images/bsp-compare/product-context.mp4" type="video/mp4" />
         </video>
         
       
@@ -322,7 +323,7 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="core">
         <p class="blue-subtitle">Solution</p>
-        <h3>Compare as you browse, accessible across the site</h3>
+        <h3>A resuable comparison pattern, sitewide</h3>
         <p style="color: #757575">
           Users can mark programs for comparison from multiple entry points,
           adding them to a persistent taskbar as they browse. When ready, they
@@ -332,84 +333,86 @@ Building a comparison experience that helps students and families evaluate progr
 
                 <div class="smallbr"></div>
 
+      </div>
+
+      <div class="welcome-container-3">
+            
+        <div class="welcome-box1">
+
+          
+         <div class="image-gallery-border">
+           <img class="project" src="../images/bsp-compare/click-compare.png" />
+         </div>
+                <div class="text-break"></div>
+
+       <div class="project-descriptions">
+         <p>
+         Select
+         </p>
+       </div>
         </div>
+  
+
+       <div class="welcome-box2">
+         <div class="image-gallery-border">
+           <img class="project" src="../images/bsp-compare/taskbar-click.png" />
+         </div>
+          <div class="text-break"></div>
+
+         <div class="project-descriptions">
+           <p>
+              Confirm
+           </p>
+         </div>
+       </div>
+
+       <div class="welcome-box3">
+         <div class="image-gallery-border">
+           <img class="project" src="../images/bsp-compare/compare-crop.png" />
+         </div>
+          <div class="text-break"></div>
+
+         <div class="project-descriptions">
+           <p>
+             Compare
+           </p>
+         </div>
+       </div>
+
+   
+       </div>
+
+
+   <div class="smallbr"></div>
         <video class="border" width="100%" loop autoplay muted>
-         <source src="../images/bsp-compare/overview.mp4" type="video/mp4" />
+         <source src="../images/bsp-compare/program-page-compare.mp4" type="video/mp4" />
         </video>
         <div class="text-break"></div>
 
         <div class="project-descriptions">
-          <h4 style="color: #757575">
-            General compare flow.
-          </h4>
+          <p>
+            Start a comparison from individual program pages.
+          </p>
         </div>
-      <div class="core">
+
+        <div class="bigbr"></div>
+
+      </div>
+      <video class="border" width="100%" loop autoplay muted>
+       <source src="../images/bsp-compare/gallery-compare.mp4" type="video/mp4" />
+      </video>
+      <div class="text-break"></div>
+
+      <div class="project-descriptions">
+        <h4 style="color: #757575">
+          Quickly compare programs from the gallery view.
+        </h4>
+      </div>
         <div class="smallbr"></div>
 
-      <div class="core">  
-          <div class="welcome-container">
-            
-           <div class="welcome-box1">
-             <div class="image-gallery-border">
-              <img class="project" src="../images/bsp-compare/program-page crop.png" />
-            </div>
-             <div class="text-break"></div>
-
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-               1. Read program details.
-              </h4>
-            </div>
-           </div>
-     
-
-          <div class="welcome-box2">
-              <div class="image-gallery-border">
-                <img class="project" src="../images/bsp-compare/click-compare.png" />
-              </div>
-                     <div class="text-break"></div>
-
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-              2. Select program for comparison.
-              </h4>
-            </div>
-          </div>
-
-      
-        </div>
+        
 
 
-      <div class="smallbr"></div>
-
-      <div class="image-gallery-border">
-              <img class="project" src="../images/bsp-compare/taskbar-click.png" />
-            </div>
-             <div class="text-break"></div>
-
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                3. Confirm comparison with selected programs in taskbar.
-              </h4>
-            </div>
-      
-      <div class="smallbr"></div>
-
-        <div class="image-gallery">
-          <img
-            class="project"
-            src="../images/bsp-compare/compare-modal-full.png"
-            alt="Information architecture diagram showing core flows, onboarding, scrolling feed, tip submission, feed filtering, and smaller features like the map modal and expandable posts."
-            />
-        </div>
-        <div class="text-break"></div>
-
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                4. Program comparison modal.
-              </h4>
-            </div>
-      </div>
       </div>
 
       <div class="bigbr"></div>
@@ -786,6 +789,109 @@ Building a comparison experience that helps students and families evaluate progr
 
         // Update active state on page load
         updateActiveNav();
+      </script>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-scrim"></div>
+        <div class="lightbox-content">
+          <div class="lightbox-media-wrapper">
+            <img id="lightbox-image" class="lightbox-media" style="display: none;" />
+            <video id="lightbox-video" class="lightbox-media" style="display: none;" controls></video>
+            <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxScrim = document.querySelector('.lightbox-scrim');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxVideo = document.getElementById('lightbox-video');
+        const lightboxContent = document.querySelector('.lightbox-content');
+
+        // Get all images and videos with the relevant classes
+        const images = document.querySelectorAll('img.project, img.border');
+        const videos = document.querySelectorAll('video.border');
+
+        // Function to open lightbox with image
+        function openLightboxImage(src) {
+          lightboxImage.src = src;
+          lightboxImage.style.display = 'block';
+          lightboxVideo.style.display = 'none';
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Prevent scrolling
+          // Initialize Lucide icons
+          if (typeof lucide !== 'undefined') {
+            setTimeout(() => lucide.createIcons(), 10);
+          }
+        }
+
+        // Function to open lightbox with video
+        function openLightboxVideo(src) {
+          lightboxVideo.src = src;
+          lightboxVideo.style.display = 'block';
+          lightboxImage.style.display = 'none';
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Prevent scrolling
+          // Initialize Lucide icons
+          if (typeof lucide !== 'undefined') {
+            setTimeout(() => lucide.createIcons(), 10);
+          }
+        }
+
+        // Function to close lightbox
+        function closeLightbox() {
+          lightboxModal.classList.remove('active');
+          document.body.style.overflow = ''; // Restore scrolling
+          lightboxVideo.pause(); // Pause video when closing
+        }
+
+        // Add click listeners to images
+        images.forEach(img => {
+          img.style.cursor = 'pointer';
+          img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openLightboxImage(img.src);
+          });
+        });
+
+        // Add click listeners to videos
+        videos.forEach(video => {
+          video.style.cursor = 'pointer';
+          video.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const source = video.querySelector('source');
+            if (source) {
+              openLightboxVideo(source.src);
+            }
+          });
+        });
+
+        // Close lightbox when clicking scrim
+        lightboxScrim.addEventListener('click', closeLightbox);
+
+        // Close lightbox when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+            closeLightbox();
+          }
+        });
+
+        // Prevent lightbox from closing when clicking on the content
+        lightboxContent.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+
+        // Close button functionality
+        const lightboxClose = document.getElementById('lightbox-close');
+        lightboxClose.addEventListener('click', (e) => {
+          e.stopPropagation();
+          closeLightbox();
+        });
       </script>
     </main>
   </body>

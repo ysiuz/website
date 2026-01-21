@@ -785,6 +785,19 @@ div.welcome-container {
   justify-content: space-between; /* Distributes space between flex items */
   box-sizing: border-box;
   gap: 2rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.welcome-container-3 {
+  display: flex;
+  justify-content: space-between; /* Distributes space between flex items */
+  box-sizing: border-box;
+  gap: 2rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.welcome-box1 {
@@ -797,6 +810,20 @@ div.welcome-box2 {
   max-width: 50%;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+div.welcome-box3 {
+  flex: 1; /* Each box will grow equally to fill available space */
+  max-width: 33.3333%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Update welcome-box1 and welcome-box2 when inside welcome-container-3 */
+div.welcome-container-3 .welcome-box1,
+div.welcome-container-3 .welcome-box2 {
+  flex: 1;
+  max-width: 33.3333%;
 }
 
 div.project-container {
@@ -1115,6 +1142,12 @@ a.gallery-anchor {
       height: auto;
     }
 
+    div.welcome-container-3 {
+      display: block;
+      box-sizing: border-box;
+      height: auto;
+    }
+
     div.welcome-box1 {
       max-width: 100%;
       padding-right: 0;
@@ -1127,6 +1160,22 @@ a.gallery-anchor {
       height: auto;
       word-wrap: break-word;
       overflow-wrap: break-word;
+      margin-bottom: 1rem;
+    }
+    div.welcome-box3 {
+      max-width: 100%;
+      margin-right: 0;
+      height: auto;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Ensure boxes inside welcome-container-3 are full width on mobile */
+    div.welcome-container-3 .welcome-box1,
+    div.welcome-container-3 .welcome-box2,
+    div.welcome-container-3 .welcome-box3 {
+      max-width: 100%;
+      flex: none;
     }
 
 
@@ -1389,7 +1438,7 @@ hr {
 
 
 /* Tablet adjustments */
-@media screen and (max-width: 768px) (min-width: 601px) {
+@media screen and (max-width: 768px) and (min-width: 601px) {
   main {
     padding: 1.5rem;
     margin-left: 1.5rem;
@@ -1398,7 +1447,6 @@ hr {
 
   .index-main {
     padding: 0rem;
-    margin: 
     /* margin-left: 0rem;
     margin-right: 0rem; */
   }
@@ -1535,4 +1583,109 @@ div.project-container {
 /* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.lightbox-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  z-index: 10001;
+  max-width: calc(100% - 20rem);
+  max-height: calc(100% - 20rem);
+  margin: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  min-height: 0;
+}
+
+.lightbox-media-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox-media {
+  max-width: 100%;
+  max-height: calc(100vh - 20rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  pointer-events: all;
+  display: block;
+}
+
+.lightbox-close {
+  position: absolute;
+  left: calc(100% + 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 10002;
+  pointer-events: all;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox-close:hover {
+  opacity: 0.7;
+}
+
+.lightbox-close svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 2;
+}
+
+/* Mobile adjustments for lightbox */
+@media screen and (max-width: 600px) {
+  .lightbox-content {
+    max-width: calc(100% - 2rem);
+    max-height: calc(100% - 2rem);
+    margin: 1rem;
+  }
 }
