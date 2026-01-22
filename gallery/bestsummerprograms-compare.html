@@ -167,15 +167,7 @@ Building a comparison experience that helps students and families evaluate progr
           />
         </div> -->
 
-        <!-- <div class="smallbr"></div>
-
-
-        <div class="image-gallery">
-          <img
-            src="../images/bsp-compare/taskbar-highlight.png"
-            alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
-          />
-        </div> -->
+       
 
         <div class="smallbr"></div>
 
@@ -397,7 +389,7 @@ Building a comparison experience that helps students and families evaluate progr
         <p class="blue-subtitle">Checkbox Entry Point</p>
         <h3>Click Compare Program to get started</h3>
         <p style="color: #757575">
-          I added a Compare checkbox to the action section on program pages, as well as while hovering program tiles in the gallery to reduce friction and empower informed users.
+          The Compare checkbox surfaces on program pages, as well as while hovering program tiles in the gallery to reduce friction and empower informed users.
         </p>
       </div>
 
@@ -432,53 +424,7 @@ Building a comparison experience that helps students and families evaluate progr
       </div> -->
 
       <div class="bigbr"></div>
-      <div class="core">
-       
 
-        <h3>Surfacing actions on hover to reduce friction</h3>
-        <p style="color: #757575">
-          User testing revealed frustration with needing to open each program
-          page to save or compare programs. We reduced this friction by exposing
-          Save and Compare actions on hover, prior to page entry.
-        </p>
-
-        <div class="smallbr"></div>
-        <div class="welcome-container">
-          <div class="welcome-box1">
-            <div class="project-descriptions">
-              <h4 style="font-weight: 600">Initial</h4>
-            </div>
-            <div class="text-break"></div>
-            
-            <div class="image-gallery-border">
-              <img class="project" src="../images/bsp-compare/initial-check.png" />
-              </div>
-            <div class="text-break"></div>
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                Thumbnails communicate well individually, but create visual clutter in aggregate.
-              </h4>
-            </div>
-          </div>
-          <div class="welcome-box2">
-            <div class="project-descriptions">
-              <h4 style="font-weight: 600">Refined</h4>
-            </div>
-            <div class="text-break"></div>
-             <div class="image-gallery">
-              <img class="project" src="../images/bsp-compare/refined-check.png" />
-              </div>
-            <div class="text-break"></div>
-            <div class="project-descriptions">
-              <h4 style="color: #757575">
-                Video previews are hidden behind opaque genre colors - sustainable at scale.
-              </h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="bigbr"></div>
-      </div>
       <!-- <div class="core">
         <div class="process">
           <p style="font-weight: 600">
@@ -501,19 +447,48 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="core">
         <div class="process">
-          <p style="font-weight: 600">
-            Similar Program Hover: Leveraging similarity to prompt action
-          </p>
-          <div class="text-break"></div>
-          <p style="color: #757575">
-            Because the Similar Programs bar surfaces contextually related
-            programs, extending the hover pattern here allows users to compare
-            high-relevance options without leaving the page
-          </p>
-          <div class="smallbr"></div>
-          <video width="100%" loop autoplay muted>
-            <source src="../images/atlas/solution.mp4" type="video/mp4" />
-          </video>
+          <div class="core">
+       
+
+            <h3>Reducing entrypoint prominence</h3>
+            <p style="color: #757575">Rather than convey multiple datapoints, the entrypoint just indicates checked vs. unchecked states for scalability.</p>
+    
+            <div class="smallbr"></div>
+            <div class="welcome-container">
+              <div class="welcome-box1">
+                <div class="project-descriptions">
+                  <h4 style="font-weight: 600">Initial</h4>
+                </div>
+                <div class="text-break"></div>
+                
+                <div class="image-gallery-border">
+                  <img class="project" src="../images/bsp-compare/initial-check.png" />
+                  </div>
+                <!-- <div class="text-break"></div>
+                <div class="project-descriptions">
+                  <h4 style="color: #757575">
+                    Subpanel surfaces checkbox along with record of compared programs
+                  </h4>
+                </div> -->
+              </div>
+              <div class="welcome-box2">
+                <div class="project-descriptions">
+                  <h4 style="font-weight: 600">Refined</h4>
+                </div>
+                <div class="text-break"></div>
+                 <div class="image-gallery">
+                  <img class="project" src="../images/bsp-compare/refined-check.png" />
+                  </div>
+                <!-- <div class="text-break"></div>
+                <div class="project-descriptions">
+                  <h4 style="color: #757575">
+                    Subpanel just shows checkbox entrypoint
+                  </h4>
+                </div> -->
+              </div>
+            </div>
+    
+          </div>
         </div>
       </div>
 
@@ -529,14 +504,18 @@ Building a comparison experience that helps students and families evaluate progr
         </p>
       </div>
       <div class="smallbr"></div>
-      <video width="100%" loop autoplay muted>
-        <source src="../images/atlas/solution.mp4" type="video/mp4" />
-      </video>
+      <video class="border" width="100%" loop autoplay muted>
+        <source src="../images/bsp-compare/taskbar-flow.mp4" type="video/mp4" />
+       </video>
+
       <div class="smallbr"></div>
-      <div class="core">
-        <div class="image-gallery">
-          <img class="project" src="../images/atlas/opaque-nodes.png" />
-        </div>
+
+
+      <div class="image-gallery">
+        <img
+          src="../images/bsp-compare/taskbar-highlight.png"
+          alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+        />
       </div>
 
       <div class="bigbr"></div>
@@ -544,21 +523,14 @@ Building a comparison experience that helps students and families evaluate progr
       <div class="core">
         <h3>Collapsible, yet still informative and interactive</h3>
         <p style="color: #757575">
-          When collapsed, the taskbar shrinks to a minimal strip, offering links
-          to the program pages and the ability to remove your selection on
-          hover.
+          When collapsed, the taskbar shrinks to a minimal strip, still reflecting selected programs and providing the ability to expand it to see more details.
         </p>
       </div>
       <div class="smallbr"></div>
-      <video width="100%" loop autoplay muted>
-        <source src="../images/atlas/solution.mp4" type="video/mp4" />
-      </video>
-      <div class="smallbr"></div>
-      <div class="core">
-        <div class="image-gallery">
-          <img class="project" src="../images/atlas/opaque-nodes.png" />
-        </div>
-      </div>
+      <video class="border" width="100%" loop autoplay muted>
+        <source src="../images/bsp-compare/collapse-taskbar.mp4" type="video/mp4" />
+       </video>
+
 
       <div class="bigbr"></div>
 
@@ -570,33 +542,79 @@ Building a comparison experience that helps students and families evaluate progr
           affiliation, selectivity, cost, location, and more—so users can
           compare them in detail and decide which programs to pursue.
         </p>
-        <div class="smallbr"></div>
+      </div>
+ 
+      <div class="smallbr"></div>
 
-        <div class="image-gallery">
-          <img class="project" src="../images/atlas/opaque-nodes.png" />
-        </div>
+      <div class="image-gallery">
+        <img
+          src="../images/bsp-compare/modal-highlight.png"
+          alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+        />
       </div>
       <div class="bigbr"></div>
 
       <div class="core">
-        <h3>Save programs or subtract from the modal</h3>
+        <h3>Informative, and action oriented</h3>
         <p style="color: #757575">
-          From the modal, users can add programs to their main list, refine
-          their comparison by removing options, and clear their comparison panel
-          once they’re done.
+          Users have the flexibility to add programs to their saved list, or edit their comparison selections. The purpose is to keep the modal fluid and reusable. 
         </p>
         <div class="smallbr"></div>
-
-        <div class="image-gallery">
-          <img class="project" src="../images/atlas/opaque-nodes.png" />
-        </div>
+      </div>
+      <div class="image-gallery">
+        <img
+          src="../images/bsp-compare/annotated-compare.png"
+          alt="Previous user flow, with users needing to use external tools and juggle tabs to put programs in context."
+        />
       </div>
 
       <div class="smallbr"></div>
+
       <div class="core">
-        <div class="image-gallery">
-          <img class="project" src="../images/atlas/opaque-nodes.png" />
+        <div class="process">
+       
+
+            <h3>Distancing destructive actions</h3>
+            <p style="color: #757575">Clear and close actions vary significantly in their severity, and were separated to reduce cognitive load and accidental actions.</p>
+    
+            <div class="smallbr"></div>
+            <div class="welcome-container">
+              <div class="welcome-box1">
+                <div class="project-descriptions">
+                  <h4 style="font-weight: 600">Initial</h4>
+                </div>
+                <div class="text-break"></div>
+                
+                <div class="image-gallery-border">
+                  <img class="project" src="../images/bsp-compare/initial-prox.png" />
+                  </div>
+                <!-- <div class="text-break"></div>
+                <div class="project-descriptions">
+                  <h4 style="color: #757575">
+                    Subpanel surfaces checkbox along with record of compared programs
+                  </h4>
+                </div> -->
+              </div>
+              <div class="welcome-box2">
+                <div class="project-descriptions">
+                  <h4 style="font-weight: 600">Refined</h4>
+                </div>
+                <div class="text-break"></div>
+                 <div class="image-gallery">
+                  <img class="project" src="../images/bsp-compare/refined-prox.png" />
+                  </div>
+                <!-- <div class="text-break"></div>
+                <div class="project-descriptions">
+                  <h4 style="color: #757575">
+                    Subpanel just shows checkbox entrypoint
+                  </h4>
+                </div> -->
+              </div>
+            </div>
+    
         </div>
+      </div>
+     
 
         <div class="bigbr"></div>
 
