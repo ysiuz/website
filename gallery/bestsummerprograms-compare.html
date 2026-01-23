@@ -47,7 +47,7 @@
 
             <div class="special-buttons">
               <a href="../about.html" class="nav-button">
-                <h6> About</h6>
+                <h6> More</h6>
               </a>
             </div>
 
@@ -59,12 +59,12 @@
     <!-- Fixed Navigation Panel -->
     <div class="fixed-nav-panel">
       <div class="nav-panel-content">
-        <a href="#" class="nav-panel-button">Product Context</a>
-        <a href="#" class="nav-panel-button">Problem</a>
-        <a href="#" class="nav-panel-button">Goal</a>
-        <a href="#" class="nav-panel-button">Solution</a>
+        <a href="#product-context" class="nav-panel-button">Product Context</a>
+        <a href="#problem" class="nav-panel-button">Problem</a>
+        <a href="#goal" class="nav-panel-button">Goal</a>
+        <a href="#solution" class="nav-panel-button">Solution</a>
         <a href="#features" class="nav-panel-button">Desktop Experience</a>
-        <a href="#features" class="nav-panel-button">Mobile Experience</a>
+        <a href="#mobile-experience" class="nav-panel-button">Mobile Experience</a>
         <a href="#takeaway" class="nav-panel-button">Results</a>
       </div>
     </div>
@@ -192,7 +192,7 @@ Building a comparison experience that helps students and families evaluate progr
       <!-- core CONTENT -->
         <div class="bigbr"></div>
 
-      <div class="core">
+      <div class="core" id="product-context">
         <div class="project-descriptions">
           <h1>❶ Background</h1>
         </div>
@@ -215,9 +215,9 @@ Building a comparison experience that helps students and families evaluate progr
         </video>
         
       
-        <div class="core" >
+        <div class="core" id="problem">
                 <div class="bigbr"></div>
-                <p style="color: #FF3D3D"class="blue-subtitle">Problem</p>
+                <p style="color: #FF3D3D" class="blue-subtitle">Problem</p>
                 <h3>Users couldn’t easily compare programs</h3>
                 <p style="color: #757575">
                   Comparing program details like cost and location is an essential part of making informed application decisions, but without a native comparison feature, users had to juggle tabs or take notes externally for context.
@@ -235,7 +235,7 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="bigbr"></div>
 
-      <div class="core">
+      <div class="core" id="goal">
         <p style="color: #0FA958" class="blue-subtitle">Goal</p>
         <h3>Make it easier to compare programs while browsing </h3>
         <p style="color: #757575">
@@ -255,7 +255,7 @@ Building a comparison experience that helps students and families evaluate progr
 
       <div class="bigbr"></div>
 
-      <div class="core">
+      <div class="core" id="solution">
         <p class="blue-subtitle">Solution</p>
         <h3>A reusable, site-wide comparison system</h3>
         <p style="color: #757575">
@@ -358,7 +358,6 @@ Building a comparison experience that helps students and families evaluate progr
     
        
     
-            <div class="bigbr"></div>
     
         
 
@@ -568,7 +567,7 @@ Building a comparison experience that helps students and families evaluate progr
         />
       </div>
 
-      <div class="smallbr"></div>
+      <div class="bigbr"></div>
 
       <div class="core">
         <div class="process">
@@ -618,7 +617,7 @@ Building a comparison experience that helps students and families evaluate progr
 
         <div class="bigbr"></div>
 
-           <div class="core">
+           <div class="core" id="mobile-experience">
         <div class="project-descriptions">
           <h1>❸ Mobile Experience</h1>
         </div>
@@ -629,18 +628,65 @@ Building a comparison experience that helps students and families evaluate progr
         <p class="blue-subtitle">Overview</p>
         <h3>The same experience but more compact</h3>
         <p style="color: #757575">
-          Mobile comparison follows the same structure as desktop, reducing the comparison cap from three to two programs to balance consistency with mobile screen constraints.
+          To maintain structural consistency with desktop while respecting mobile constraints, the comparison cap was reduced from three programs to two.
         </p>
+        </div>
+        <div class="smallbr"></div>
+        <video class="border" width="100%" loop autoplay muted>
+          <source src="../images/bsp-compare/mobile.mp4" type="video/mp4" />
+         </video>
         <div class="bigbr"></div>
-        <h3>Keeping patterns consistent</h3>
-        <p style="color: #757575">
-          A more minimal mobile comparison was explored but ultimately discarded due to its divergence from desktop patterns. A denser, two-column approach preserves cross-platform consistency, and our transparent information approach.
-
-        </p>
+        <div class="core">
+          <div class="process">
+         
+  
+              <h3>Priotizing left-to-right scannability</h3>
+              <p style="color: #757575">
+                A denser two-column layout was chosen over a minimal, stacked variant to maintain lateral scannability and keep patterns consistent across platforms.
+              </p>
+      
+              <div class="smallbr"></div>
+              <div class="welcome-container">
+                <div class="welcome-box1">
+                  <div class="project-descriptions">
+                    <h4 style="font-weight: 600">Initial</h4>
+                  </div>
+                  <div class="text-break"></div>
+                  
+                  <div class="image-gallery-border">
+                    <img class="project" src="../images/bsp-compare/mobile-initial.png" />
+                    </div>
+                  <!-- <div class="text-break"></div>
+                  <div class="project-descriptions">
+                    <h4 style="color: #757575">
+                      Subpanel surfaces checkbox along with record of compared programs
+                    </h4>
+                  </div> -->
+                </div>
+                <div class="welcome-box2">
+                  <div class="project-descriptions">
+                    <h4 style="font-weight: 600">Refined</h4>
+                  </div>
+                  <div class="text-break"></div>
+                   <div class="image-gallery-border">
+                    <img class="project" src="../images/bsp-compare/mobile-refined.png" />
+                    </div>
+                  <!-- <div class="text-break"></div>
+                  <div class="project-descriptions">
+                    <h4 style="color: #757575">
+                      Subpanel just shows checkbox entrypoint
+                    </h4>
+                  </div> -->
+                </div>
+              </div>
+      
+          </div>
+        </div>
+     
       </div>
       <div class="bigbr"></div>
 
-      <div class="core">
+      <div class="core" id="takeaway">
         <div class="project-descriptions">
           <h1>❸ Results</h1>
         </div>
@@ -649,21 +695,15 @@ Building a comparison experience that helps students and families evaluate progr
         <div class="text-break"></div>
         <div class="text-break"></div>
         <p class="blue-subtitle">Takeaway</p>
-        <h3>Prototyping with code is sick :^)</h3>
+        <h3>Building with flexibility for different workflows</h3>
         <p style="color: #757575">
-          Because of Atlas' niche context and goal, I couldn't rely just on
-          creative software to design my map. I needed to actually code to find
-          the interactions and visual feedback that felt most natural.
+          Because users compare at different moments in their decision process, we focused on building a flexible system rather than isolated comparison screens.
         </p>
         <div class="smallbr"></div>
         <p class="blue-subtitle">Next Steps</p>
-        <h3>Building a more robust onboarding and takeaway</h3>
+        <h3>Incorporating more interaction feedback</h3>
         <p style="color: #757575">
-          The most common feedback I've received about Atlas is that it's a bit
-          daunting and could use a friendly onboarding. In tandem, it will be
-          great to work on what things users can tangibly takeaway from the
-          experience, like potentially a receipt of their algorithmic profile,
-          or shareable png's.
+          With flexibility in mind, we want to continue exploring selection and notification patterns and feedback on the gallery, program page, and program list surfaces that make comparing feel intuitive across the platform.
         </p>
         <div class="bigbr"></div>
       </div>
@@ -695,32 +735,66 @@ Building a comparison experience that helps students and families evaluate progr
         // Navigation panel active state functionality
         const navButtons = document.querySelectorAll(".nav-panel-button");
 
+        // Add smooth scroll functionality to navigation buttons
+        navButtons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = button.getAttribute("href");
+            if (targetId && targetId !== "#") {
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                const rect = targetElement.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const offsetTop = rect.top + scrollTop - 100; // Offset for fixed nav
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            } else if (targetId === "#") {
+              // Scroll to top
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
         function updateActiveNav() {
           const scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
           const windowHeight = window.innerHeight;
+          const viewportMiddle = scrollTop + windowHeight * 0.5;
 
           // Remove active class from all buttons
           navButtons.forEach((button) => button.classList.remove("active"));
 
-          // Check if we're at the very top (Background section)
-          if (scrollTop < 100) {
-            const backgroundButton = document.querySelector('[href="#"]');
-            if (backgroundButton) {
-              backgroundButton.classList.add("active");
-            }
-            return;
-          }
-
-          // Check other sections
+          // Define all sections with their IDs and buttons
           const sections = [
+            {
+              id: "product-context",
+              button: document.querySelector('[href="#product-context"]'),
+            },
+            {
+              id: "problem",
+              button: document.querySelector('[href="#problem"]'),
+            },
+            {
+              id: "goal",
+              button: document.querySelector('[href="#goal"]'),
+            },
+            {
+              id: "solution",
+              button: document.querySelector('[href="#solution"]'),
+            },
             {
               id: "features",
               button: document.querySelector('[href="#features"]'),
             },
             {
-              id: "process",
-              button: document.querySelector('[href="#process"]'),
+              id: "mobile-experience",
+              button: document.querySelector('[href="#mobile-experience"]'),
             },
             {
               id: "takeaway",
@@ -728,29 +802,53 @@ Building a comparison experience that helps students and families evaluate progr
             },
           ];
 
-          // Find which section is currently in view
+          // Find which section contains the middle of the viewport
+          let activeSection = null;
+
+          // Check sections in reverse order (bottom to top)
           for (let i = sections.length - 1; i >= 0; i--) {
-            const section = document.getElementById(sections[i].id);
+            const sectionData = sections[i];
+            const section = document.getElementById(sectionData.id);
             if (section) {
               const rect = section.getBoundingClientRect();
-              // Check if section is in view (top of section is above middle of viewport)
-              if (rect.top <= windowHeight * 0.5) {
-                if (sections[i].button) {
-                  sections[i].button.classList.add("active");
-                }
+              const sectionTop = rect.top + scrollTop;
+              const sectionBottom = sectionTop + rect.height;
+              
+              // Check if the middle of viewport is within this section
+              if (viewportMiddle >= sectionTop && viewportMiddle <= sectionBottom) {
+                activeSection = sectionData;
                 break;
+              }
+              // Also check if section is significantly visible (more than 30% of viewport)
+              else if (rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3) {
+                // If no section contains the middle, use the one with most visibility
+                if (!activeSection) {
+                  activeSection = sectionData;
+                }
               }
             }
           }
 
-          // If we're at the bottom and no section is active, activate Takeaway
-          if (
-            scrollTop + windowHeight >=
-            document.documentElement.scrollHeight - 100
-          ) {
-            const takeawayButton = document.querySelector('[href="#takeaway"]');
-            if (takeawayButton) {
-              takeawayButton.classList.add("active");
+          // If we found an active section, highlight it
+          if (activeSection && activeSection.button) {
+            activeSection.button.classList.add("active");
+          } else {
+            // Fallback: if at the very top, activate product-context
+            if (scrollTop < 200) {
+              const productContextButton = document.querySelector('[href="#product-context"]');
+              if (productContextButton) {
+                productContextButton.classList.add("active");
+              }
+            }
+            // If at the bottom, activate takeaway
+            else if (
+              scrollTop + windowHeight >=
+              document.documentElement.scrollHeight - 100
+            ) {
+              const takeawayButton = document.querySelector('[href="#takeaway"]');
+              if (takeawayButton) {
+                takeawayButton.classList.add("active");
+              }
             }
           }
         }

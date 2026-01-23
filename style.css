@@ -1596,12 +1596,29 @@ div.project-container {
   color: #37ABFF;
 }
 
+.nav-panel-button:hover[href="#problem"] {
+  color: #FF3D3D;
+}
+
+.nav-panel-button:hover[href="#goal"] {
+  color: #0FA958;
+}
+
 .nav-panel-button:active {
   color: #37ABFF;
 }
 
 .nav-panel-button.active {
   color: #37ABFF;
+  background-color: #F0F0F0;
+}
+
+.nav-panel-button.active[href="#problem"] {
+  color: #FF3D3D;
+}
+
+.nav-panel-button.active[href="#goal"] {
+  color: #0FA958;
 }
 
 
