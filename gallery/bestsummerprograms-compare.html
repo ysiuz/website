@@ -732,7 +732,7 @@ Building a comparison experience that helps students and families evaluate progr
           }
         });
 
-        // Navigation panel active state functionality
+        // Navigation panel scroll functionality
         const navButtons = document.querySelectorAll(".nav-panel-button");
 
         // Add smooth scroll functionality to navigation buttons
@@ -760,104 +760,6 @@ Building a comparison experience that helps students and families evaluate progr
             }
           });
         });
-
-        function updateActiveNav() {
-          const scrollTop =
-            window.pageYOffset || document.documentElement.scrollTop;
-          const windowHeight = window.innerHeight;
-          const viewportMiddle = scrollTop + windowHeight * 0.5;
-
-          // Remove active class from all buttons
-          navButtons.forEach((button) => button.classList.remove("active"));
-
-          // Define all sections with their IDs and buttons
-          const sections = [
-            {
-              id: "product-context",
-              button: document.querySelector('[href="#product-context"]'),
-            },
-            {
-              id: "problem",
-              button: document.querySelector('[href="#problem"]'),
-            },
-            {
-              id: "goal",
-              button: document.querySelector('[href="#goal"]'),
-            },
-            {
-              id: "solution",
-              button: document.querySelector('[href="#solution"]'),
-            },
-            {
-              id: "features",
-              button: document.querySelector('[href="#features"]'),
-            },
-            {
-              id: "mobile-experience",
-              button: document.querySelector('[href="#mobile-experience"]'),
-            },
-            {
-              id: "takeaway",
-              button: document.querySelector('[href="#takeaway"]'),
-            },
-          ];
-
-          // Find which section contains the middle of the viewport
-          let activeSection = null;
-
-          // Check sections in reverse order (bottom to top)
-          for (let i = sections.length - 1; i >= 0; i--) {
-            const sectionData = sections[i];
-            const section = document.getElementById(sectionData.id);
-            if (section) {
-              const rect = section.getBoundingClientRect();
-              const sectionTop = rect.top + scrollTop;
-              const sectionBottom = sectionTop + rect.height;
-              
-              // Check if the middle of viewport is within this section
-              if (viewportMiddle >= sectionTop && viewportMiddle <= sectionBottom) {
-                activeSection = sectionData;
-                break;
-              }
-              // Also check if section is significantly visible (more than 30% of viewport)
-              else if (rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3) {
-                // If no section contains the middle, use the one with most visibility
-                if (!activeSection) {
-                  activeSection = sectionData;
-                }
-              }
-            }
-          }
-
-          // If we found an active section, highlight it
-          if (activeSection && activeSection.button) {
-            activeSection.button.classList.add("active");
-          } else {
-            // Fallback: if at the very top, activate product-context
-            if (scrollTop < 200) {
-              const productContextButton = document.querySelector('[href="#product-context"]');
-              if (productContextButton) {
-                productContextButton.classList.add("active");
-              }
-            }
-            // If at the bottom, activate takeaway
-            else if (
-              scrollTop + windowHeight >=
-              document.documentElement.scrollHeight - 100
-            ) {
-              const takeawayButton = document.querySelector('[href="#takeaway"]');
-              if (takeawayButton) {
-                takeawayButton.classList.add("active");
-              }
-            }
-          }
-        }
-
-        // Update active state on scroll
-        window.addEventListener("scroll", updateActiveNav);
-
-        // Update active state on page load
-        updateActiveNav();
       </script>
 
       <!-- Lightbox Modal -->
