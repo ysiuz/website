@@ -678,6 +678,16 @@ img {
     object-fit: contain;  /* similar to video */
 }
 
+img.pixel {
+   display: block;       /* allows margin auto to work */
+
+    max-width: 60rem;     /* same max-width as videos */
+    height: auto;         /* maintain aspect ratio */
+    border-radius: 0px;   /* same style as video */
+    object-fit: contain;  /* similar to video */
+    padding: 4px 4px 8px 4px;
+}
+
 .full-content {
   max-width: 100%;
   height: auto;
@@ -1115,6 +1125,7 @@ a.gallery-anchor {
       margin-top: 2rem;
       padding-left: 0;
       width: calc(100% - 2rem); /* Adjust width based on the margin (left and right) */
+    
     }
 
     .nav-buttons {
