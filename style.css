@@ -114,15 +114,19 @@ table {
 
 
 /* Start of type-specific styles */
-
+hr {
+  border: none;
+  border-top: 2px solid #F0F0F0;
+  margin-top: 0.5rem;
+}
   a:link {
-      color: #969696;
+      color: #363636;
       text-decoration: none;
     
     }
 
     a:visited {
-      color: #969696;
+      color: #363636;
     }
 
     a:hover {
@@ -197,6 +201,16 @@ table {
     font-display: swap;
   }
 
+  
+    @font-face {
+    font-family: 'offbit-regular';
+    src: url('fonts/OffBit-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
 
 
 
@@ -215,7 +229,7 @@ table {
     font-weight: 400;
     font-style: normal;
     font-size: 70px;
-    color: #303030;
+    color: #363636;
     line-height: 100%;
   }
 
@@ -249,7 +263,7 @@ table {
 
       h6 {
     font-family: "ppmori-medium", sans-serif;
-    font-weight: 500;
+    font-weight: 00;
           font-size: 18px;
       color: #363636;
       line-height: 150%;
@@ -344,7 +358,7 @@ video.border {
 }
 
 
-.secondary-text a:visited, .primary-text a:visited {
+.secondary-text a:visited {
   color: #969696;
 }
 
@@ -364,6 +378,13 @@ a.link-dotted:focus {
 
 a.link-dotted:visited {
   color: #969696;
+}
+
+.metadata-link {
+  text-decoration: none  !important;
+}
+.metadata-link:hover {
+  text-decoration: underline  !important;
 }
 
   body {
@@ -860,6 +881,22 @@ div.project-box3 {
   max-width: 33.3333%;
 }
 
+div.metadata-container {
+  display: flex;
+  box-sizing: border-box;
+
+}
+
+div.metadata-subcontainer1 {
+  flex: 2; 
+  max-width: 70%;
+}
+
+div.metadata-subcontainer2 {
+  flex: 2; 
+  max-width: 30%;
+}
+
 div.intro-container {
  display: flex;
   box-sizing: border-box;
@@ -972,6 +1009,20 @@ a.gallery-anchor {
     max-width: 100%;
   }
 
+  div.metadata-container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+div.metadata-subcontainer1 {
+  flex: 1; /* grows to fill remaining space */
+  min-width: 0; /* prevents overflow issues with text/flex children */
+}
+
+div.metadata-subcontainer2 {
+  flex: 0 0 auto; /* don't grow, don't shrink, size to content */
+}
   
 /* TYPE ADJUSTMENTS */
 
@@ -1410,16 +1461,15 @@ a.gallery-anchor {
   text-decoration: underline;
 }
 
-.primary-text a:visited {
+/* .primary-text a:visited {
   color: #969696;
-}
+} */
 
 .primary-text {
   color: #000; /* black for regular text */
 }
 
 .primary-text a {
-  color: #969696; /* grey for links at rest */
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #37ABFF; 
@@ -1487,7 +1537,21 @@ hr {
     /* margin-left: 0rem;
     margin-right: 0rem; */
   }
+  div.metadata-container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
 
+div.metadata-subcontainer1 {
+  flex: 1; /* grows to fill remaining space */
+  min-width: 0; /* prevents overflow issues with text/flex children */
+}
+
+div.metadata-subcontainer2 {
+  flex: 0 0 auto; /* don't grow, don't shrink, size to content */
+}
+  
 
 div.intro-container {
  display: block;
