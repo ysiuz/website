@@ -980,6 +980,13 @@ div.intro-box2 {
 }
 /* Gallery container end */
 
+.inline-icon {
+  display: inline;
+  height: 1em;        /* scales to the current font-size */
+  width: auto;         /* preserves aspect ratio */
+  vertical-align: -0.15em; /* nudge it to sit on the baseline instead of hanging high */
+  margin: 0em;    /* a little breathing room from the surrounding words */
+}
 
 /* All br's */
   div.hugebr {
